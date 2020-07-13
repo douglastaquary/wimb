@@ -14,7 +14,16 @@ struct ContentView: View {
     var body: some View {
         List {
             ForEach(viewModel.trips) { trip in
-                Text(trip.secondaryTerminal)
+                HStack {
+                    Image(systemName: "bus")
+                    Text("\(trip.firstPartOfTheSign)-\(trip.secondPartOfTheSign)")
+                        .font(.footnote)
+                        .fontWeight(.medium)
+                    VStack {
+                        Text("\(trip.mainTerminal) - \(trip.secondaryTerminal)")
+                            .font(.callout)
+                    }
+                }
             }
         }
     }
