@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = TripViewModel()
+    
     var body: some View {
-        Text("Hello, world!").padding()
+        List {
+            ForEach(viewModel.trips) { trip in
+                Text(trip.secondaryTerminal)
+            }
+        }
     }
 }
 

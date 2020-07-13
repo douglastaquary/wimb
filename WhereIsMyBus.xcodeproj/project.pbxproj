@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4EC4EF6424BBF01A007D94D0 /* APISPTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */; };
+		4EC4EF6524BBF01A007D94D0 /* APISPTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */; };
+		4EC4EF6724BBF4EA007D94D0 /* TripsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */; };
+		4EC4EF6824BBF4EA007D94D0 /* TripsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */; };
+		4EC4EF6A24BBF81F007D94D0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6924BBF81F007D94D0 /* Response.swift */; };
+		4EC4EF6B24BBF81F007D94D0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6924BBF81F007D94D0 /* Response.swift */; };
+		4EC4EF6E24BBF981007D94D0 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */; };
+		4EC4EF6F24BBF981007D94D0 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */; };
 		4EFDF8B324BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */; };
 		4EFDF8B424BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */; };
 		4EFDF8B524BBD8A60018FDC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* ContentView.swift */; };
 		4EFDF8B624BBD8A60018FDC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* ContentView.swift */; };
 		4EFDF8B724BBD8A60018FDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */; };
 		4EFDF8B824BBD8A60018FDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */; };
+		4EFDF8C324BBDA210018FDC3 /* WimbApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */; };
+		4EFDF8C424BBDA210018FDC3 /* WimbApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */; };
+		4EFDF8C624BBDB410018FDC3 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C524BBDB410018FDC3 /* ApiError.swift */; };
+		4EFDF8C724BBDB410018FDC3 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C524BBDB410018FDC3 /* ApiError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISPTrans.swift; sourceTree = "<group>"; };
+		4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsResponse.swift; sourceTree = "<group>"; };
+		4EC4EF6924BBF81F007D94D0 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
 		4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsMyBusApp.swift; sourceTree = "<group>"; };
 		4EFDF8A124BBD8A40018FDC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +40,8 @@
 		4EFDF8AF24BBD8A60018FDC3 /* WhereIsMyBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFDF8B124BBD8A60018FDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EFDF8B224BBD8A60018FDC3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WimbApiService.swift; sourceTree = "<group>"; };
+		4EFDF8C524BBDB410018FDC3 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EC4EF6C24BBF92B007D94D0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		4EFDF89A24BBD8A40018FDC3 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +83,8 @@
 		4EFDF89F24BBD8A40018FDC3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4EC4EF6C24BBF92B007D94D0 /* ViewModels */,
+				4EFDF8C124BBD9B80018FDC3 /* Backend */,
 				4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */,
 				4EFDF8A124BBD8A40018FDC3 /* ContentView.swift */,
 				4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */,
@@ -88,6 +116,26 @@
 				4EFDF8B224BBD8A60018FDC3 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		4EFDF8C124BBD9B80018FDC3 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				4EFDF8C824BBDB460018FDC3 /* Models */,
+				4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */,
+				4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		4EFDF8C824BBDB460018FDC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4EFDF8C524BBDB410018FDC3 /* ApiError.swift */,
+				4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */,
+				4EC4EF6924BBF81F007D94D0 /* Response.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,8 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFDF8C324BBDA210018FDC3 /* WimbApiService.swift in Sources */,
+				4EC4EF6E24BBF981007D94D0 /* TripViewModel.swift in Sources */,
+				4EC4EF6724BBF4EA007D94D0 /* TripsResponse.swift in Sources */,
+				4EFDF8C624BBDB410018FDC3 /* ApiError.swift in Sources */,
 				4EFDF8B524BBD8A60018FDC3 /* ContentView.swift in Sources */,
+				4EC4EF6424BBF01A007D94D0 /* APISPTrans.swift in Sources */,
 				4EFDF8B324BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */,
+				4EC4EF6A24BBF81F007D94D0 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EFDF8C424BBDA210018FDC3 /* WimbApiService.swift in Sources */,
+				4EC4EF6F24BBF981007D94D0 /* TripViewModel.swift in Sources */,
+				4EC4EF6824BBF4EA007D94D0 /* TripsResponse.swift in Sources */,
+				4EFDF8C724BBDB410018FDC3 /* ApiError.swift in Sources */,
 				4EFDF8B624BBD8A60018FDC3 /* ContentView.swift in Sources */,
+				4EC4EF6524BBF01A007D94D0 /* APISPTrans.swift in Sources */,
 				4EFDF8B424BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */,
+				4EC4EF6B24BBF81F007D94D0 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
