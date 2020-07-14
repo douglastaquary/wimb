@@ -29,6 +29,16 @@
 		4EC4EF8724BD2C3E007D94D0 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8524BD2C3E007D94D0 /* FilterView.swift */; };
 		4EC4EF9024BD484E007D94D0 /* TripViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8F24BD484E007D94D0 /* TripViewCell.swift */; };
 		4EC4EF9124BD484E007D94D0 /* TripViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8F24BD484E007D94D0 /* TripViewCell.swift */; };
+		4EC4EF9924BD5548007D94D0 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9824BD5548007D94D0 /* Vehicle.swift */; };
+		4EC4EF9A24BD5548007D94D0 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9824BD5548007D94D0 /* Vehicle.swift */; };
+		4EC4EF9C24BD5552007D94D0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9B24BD5552007D94D0 /* Trip.swift */; };
+		4EC4EF9D24BD5552007D94D0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9B24BD5552007D94D0 /* Trip.swift */; };
+		4EC4EF9F24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */; };
+		4EC4EFA024BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */; };
+		4EC4EFA324BD5907007D94D0 /* TripDatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */; };
+		4EC4EFA424BD5907007D94D0 /* TripDatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */; };
+		4EC4EFA624BD5990007D94D0 /* TripDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */; };
+		4EC4EFA724BD5990007D94D0 /* TripDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */; };
 		4EFDF8B324BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */; };
 		4EFDF8B424BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */; };
 		4EFDF8B524BBD8A60018FDC3 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */; };
@@ -53,6 +63,11 @@
 		4EC4EF8224BD2A61007D94D0 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		4EC4EF8524BD2C3E007D94D0 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		4EC4EF8F24BD484E007D94D0 /* TripViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewCell.swift; sourceTree = "<group>"; };
+		4EC4EF9824BD5548007D94D0 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		4EC4EF9B24BD5552007D94D0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalOfVehiclesPerTrip.swift; sourceTree = "<group>"; };
+		4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDatailView.swift; sourceTree = "<group>"; };
+		4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewModel.swift; sourceTree = "<group>"; };
 		4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsMyBusApp.swift; sourceTree = "<group>"; };
 		4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 		4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +136,7 @@
 		4EC4EF9224BD5221007D94D0 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4EC4EFA124BD58EE007D94D0 /* TripDetail */,
 				4EC4EF9324BD522B007D94D0 /* TripList */,
 			);
 			path = Features;
@@ -142,6 +158,15 @@
 				4EC4EF8F24BD484E007D94D0 /* TripViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		4EC4EFA124BD58EE007D94D0 /* TripDetail */ = {
+			isa = PBXGroup;
+			children = (
+				4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */,
+				4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */,
+			);
+			path = TripDetail;
 			sourceTree = "<group>";
 		};
 		4EFDF89A24BBD8A40018FDC3 = {
@@ -210,6 +235,9 @@
 				4EFDF8C524BBDB410018FDC3 /* ApiError.swift */,
 				4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */,
 				4EC4EF6924BBF81F007D94D0 /* Response.swift */,
+				4EC4EF9824BD5548007D94D0 /* Vehicle.swift */,
+				4EC4EF9B24BD5552007D94D0 /* Trip.swift */,
+				4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -317,14 +345,19 @@
 				4EFDF8C324BBDA210018FDC3 /* WimbApiService.swift in Sources */,
 				4EC4EF6E24BBF981007D94D0 /* TripViewModel.swift in Sources */,
 				4EC4EF6724BBF4EA007D94D0 /* TripsResponse.swift in Sources */,
+				4EC4EF9F24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */,
 				4EC4EF8324BD2A61007D94D0 /* ButtonView.swift in Sources */,
 				4EC4EF9024BD484E007D94D0 /* TripViewCell.swift in Sources */,
+				4EC4EF9924BD5548007D94D0 /* Vehicle.swift in Sources */,
 				4EFDF8C624BBDB410018FDC3 /* ApiError.swift in Sources */,
 				4EFDF8B524BBD8A60018FDC3 /* TripListView.swift in Sources */,
 				4EC4EF6424BBF01A007D94D0 /* APISPTrans.swift in Sources */,
 				4EC4EF8024BD2A42007D94D0 /* ClearButton.swift in Sources */,
+				4EC4EFA624BD5990007D94D0 /* TripDetailViewModel.swift in Sources */,
 				4EFDF8B324BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */,
 				4EC4EF6A24BBF81F007D94D0 /* Response.swift in Sources */,
+				4EC4EF9C24BD5552007D94D0 /* Trip.swift in Sources */,
+				4EC4EFA324BD5907007D94D0 /* TripDatailView.swift in Sources */,
 				4EC4EF8624BD2C3E007D94D0 /* FilterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,14 +372,19 @@
 				4EFDF8C424BBDA210018FDC3 /* WimbApiService.swift in Sources */,
 				4EC4EF6F24BBF981007D94D0 /* TripViewModel.swift in Sources */,
 				4EC4EF6824BBF4EA007D94D0 /* TripsResponse.swift in Sources */,
+				4EC4EFA024BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */,
 				4EC4EF8424BD2A61007D94D0 /* ButtonView.swift in Sources */,
 				4EC4EF9124BD484E007D94D0 /* TripViewCell.swift in Sources */,
+				4EC4EF9A24BD5548007D94D0 /* Vehicle.swift in Sources */,
 				4EFDF8C724BBDB410018FDC3 /* ApiError.swift in Sources */,
 				4EFDF8B624BBD8A60018FDC3 /* TripListView.swift in Sources */,
 				4EC4EF6524BBF01A007D94D0 /* APISPTrans.swift in Sources */,
 				4EC4EF8124BD2A42007D94D0 /* ClearButton.swift in Sources */,
+				4EC4EFA724BD5990007D94D0 /* TripDetailViewModel.swift in Sources */,
 				4EFDF8B424BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */,
 				4EC4EF6B24BBF81F007D94D0 /* Response.swift in Sources */,
+				4EC4EF9D24BD5552007D94D0 /* Trip.swift in Sources */,
+				4EC4EFA424BD5907007D94D0 /* TripDatailView.swift in Sources */,
 				4EC4EF8724BD2C3E007D94D0 /* FilterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

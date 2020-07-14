@@ -30,9 +30,14 @@ struct TripListView: View {
                 } else {
                     List {
                         ForEach(viewModel.trips) { trip in
-                            TripViewCell(
-                                tripNumber: "\(trip.firstPartOfTheSign)-\(trip.secondPartOfTheSign)", destination: "\(trip.mainTerminal) - \(trip.secondaryTerminal)"
-                            )
+                            NavigationLink(
+                                destination: TripDatailView(viewModel: TripDetailViewModel(trip: trip)),
+                                label: {
+                                    TripViewCell(
+                                        tripNumber: "\(trip.firstPartOfTheSign)-\(trip.secondPartOfTheSign)", destination: "\(trip.mainTerminal) - \(trip.secondaryTerminal)"
+                                    )
+                                })
+                            
                         }
                     }
                     .listStyle(GroupedListStyle())
