@@ -15,7 +15,7 @@ public struct WimbApiService {
             .dataTaskPublisher(for: request)
             .tryMap { result -> Response<T> in
                 let value = try JSONDecoder().decode(T.self, from: result.data)
-                print("\nResponse:\n\(value)\n")
+                print("\nResponse:\n\(value)\n".utf8)
                 return Response(value: value, response: result.response)
             }
             .receive(on: DispatchQueue.main)
@@ -26,8 +26,7 @@ public struct WimbApiService {
         return URLSession.shared
             .dataTaskPublisher(for: request)
             .tryMap { result -> Bool in
-                let value = String(data: result.data, encoding: .utf8)
-                print("\nValue: \(String(describing: value))")
+                //let value = String(data: result.data, encoding: .utf8)
                 return true
             }
             .receive(on: DispatchQueue.main)

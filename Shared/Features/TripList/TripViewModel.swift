@@ -10,6 +10,7 @@ import Combine
 
 class TripViewModel: ObservableObject {
     
+    @Published var searchText = ""
     @Published var trips: [Trip] = []
     @Published var isCheck = false
     @Published var loading = false
@@ -36,13 +37,13 @@ extension TripViewModel {
                     print("\n✅ App autenticado na API da SPTrans!\n")
                     self.loading = false
                     self.isCheck = true
-                    self.searchTrips()
+                    //self.searchTrips()
             })
     }
     
-    func searchTrips() {
+    public func searchTrips(text: String) {
         loading = true
-        anyCancellation = APISPTrans.fetchTrips(text: "ibirapuera", .trips)
+        anyCancellation = APISPTrans.fetchTrips(text: text, .trips)
             .mapError({ (error) -> Error in
                 print(error)
                 self.loading = false
