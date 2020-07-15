@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E44563124BE933B007189AC /* VehicleInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */; };
+		4E44563224BE933B007189AC /* VehicleInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */; };
 		4EC4EF6424BBF01A007D94D0 /* APISPTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */; };
 		4EC4EF6524BBF01A007D94D0 /* APISPTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */; };
 		4EC4EF6724BBF4EA007D94D0 /* TripsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */; };
@@ -52,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInformationViewCell.swift; sourceTree = "<group>"; };
 		4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISPTrans.swift; sourceTree = "<group>"; };
 		4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsResponse.swift; sourceTree = "<group>"; };
 		4EC4EF6924BBF81F007D94D0 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -98,13 +101,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4EC4EF6C24BBF92B007D94D0 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		4EC4EF7024BD2634007D94D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +161,7 @@
 			children = (
 				4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */,
 				4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */,
+				4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */,
 			);
 			path = TripDetail;
 			sourceTree = "<group>";
@@ -185,7 +182,6 @@
 				4EC4EF9224BD5221007D94D0 /* Features */,
 				4EC4EF7824BD2947007D94D0 /* Extensions */,
 				4EC4EF7024BD2634007D94D0 /* Views */,
-				4EC4EF6C24BBF92B007D94D0 /* ViewModels */,
 				4EFDF8C124BBD9B80018FDC3 /* Backend */,
 				4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */,
 				4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */,
@@ -359,6 +355,7 @@
 				4EC4EF9C24BD5552007D94D0 /* Trip.swift in Sources */,
 				4EC4EFA324BD5907007D94D0 /* TripDatailView.swift in Sources */,
 				4EC4EF8624BD2C3E007D94D0 /* FilterView.swift in Sources */,
+				4E44563124BE933B007189AC /* VehicleInformationViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +383,7 @@
 				4EC4EF9D24BD5552007D94D0 /* Trip.swift in Sources */,
 				4EC4EFA424BD5907007D94D0 /* TripDatailView.swift in Sources */,
 				4EC4EF8724BD2C3E007D94D0 /* FilterView.swift in Sources */,
+				4E44563224BE933B007189AC /* VehicleInformationViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

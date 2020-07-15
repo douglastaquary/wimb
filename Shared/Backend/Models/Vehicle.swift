@@ -10,17 +10,18 @@ import CoreLocation
 
 struct Vehicle: Codable, Identifiable {
     var id = UUID()
-    
-    let vehiclePrefix: String
+    let vehiclePrefix: Int
+    let arrivalForecast: String
     let hasAccessibility: Bool
-    let updatedTime: String
+    let lastUpdatedTime: String
     let longitude: Double
     let latitude: Double
     
     enum CodingKeys: String, CodingKey {
         case vehiclePrefix = "p"
+        case arrivalForecast = "t"
         case hasAccessibility = "a"
-        case updatedTime = "ta"
+        case lastUpdatedTime = "ta"
         case longitude = "py"
         case latitude = "px"
     }

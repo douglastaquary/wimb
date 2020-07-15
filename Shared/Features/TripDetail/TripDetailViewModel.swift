@@ -12,6 +12,7 @@ class TripDetailViewModel: ObservableObject {
     
     @Published var trip: Trip
     @Published var vehicles: [Vehicle] = []
+    @Published var stops: [StopBus] = []
     @Published var isLoading = false
     
     var anyCancellation: AnyCancellable?
@@ -32,11 +33,23 @@ extension TripDetailViewModel {
                 return error
             })
             .sink(receiveCompletion: { _ in },
-                  receiveValue: {
-                    print("\n✅ App autenticado na API da SPTrans!\n")
+                  receiveValue: { [weak self] in
+                    guard let `self` = self else { return }
+                    self.stops = $0.stops
+                    self.vehicles = self.mergeVehicles(to: self.stops)
                     self.isLoading = false
-                    self.vehicles = $0.vehicles
             })
+    }
+    
+    func mergeVehicles(to stops: [StopBus]) -> [Vehicle] {
+        guard !stops.isEmpty else {
+            return []
+        }
+        for stop in stops {
+            self.vehicles.append(contentsOf: stop.vehicles)
+        }
+
+        return self.vehicles
     }
     
 }

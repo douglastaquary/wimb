@@ -17,7 +17,7 @@ enum APISPTrans {
 public enum SPTransEndpoint: String {
     case auth = "/Login/Autenticar"
     case trips = "/Linha/Buscar"
-    case arrivals = "/Posicao/Linha"
+    case arrivals = "/Previsao/Linha"
 }
 
 extension APISPTrans {
