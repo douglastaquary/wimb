@@ -16,15 +16,13 @@ struct VehicleInformationViewCell: View {
         VStack(alignment: .leading) {
             HStack(spacing: 16) {
                 HStack {
-                    Image(systemName: "bus.fill")
-                        .padding(.leading, 8)
+                    Image(systemName: "bus").foregroundColor(.gray)
                     Text(vehicleNumber)
-                        .font(.subheadline)
-                        .fontWeight(.bold)
-                        .padding([.trailing, .top, .bottom], 6)
-        
+                        .font(.footnote)
+                        .fontWeight(.medium)
                 }
-                .background(Color.green)
+                .padding(6)
+                .border(Color.gray, width: 1)
                 .cornerRadius(4)
 
                 Spacer()
@@ -38,7 +36,7 @@ struct VehicleInformationViewCell: View {
                 }
             }
             .frame(maxWidth: .infinity)
-            .padding([.trailing, .bottom, .top], 12)
+            //.padding([.trailing, .bottom, .top], 12)
         }
     }
 }

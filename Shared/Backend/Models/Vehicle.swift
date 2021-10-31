@@ -10,7 +10,7 @@ import CoreLocation
 
 struct Vehicle: Codable, Identifiable {
     var id = UUID()
-    let vehiclePrefix: Int
+    let vehiclePrefix: String
     let arrivalForecast: String
     let hasAccessibility: Bool
     let lastUpdatedTime: String

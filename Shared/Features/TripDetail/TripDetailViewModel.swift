@@ -35,7 +35,7 @@ extension TripDetailViewModel {
             .sink(receiveCompletion: { _ in },
                   receiveValue: { [weak self] in
                     guard let `self` = self else { return }
-                    self.stops = $0.stops
+                    self.stops = $0.stops ?? []
                     self.vehicles = self.mergeVehicles(to: self.stops)
                     self.isLoading = false
             })
@@ -46,7 +46,7 @@ extension TripDetailViewModel {
             return []
         }
         for stop in stops {
-            self.vehicles.append(contentsOf: stop.vehicles)
+            self.vehicles.append(contentsOf: stop.vehicles ?? [])
         }
 
         return self.vehicles
