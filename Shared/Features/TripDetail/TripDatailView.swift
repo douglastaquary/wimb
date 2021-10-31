@@ -24,14 +24,20 @@ struct TripDatailView: View {
                 ProgressView()
                 Spacer()
             } else {
-                List {
-                    ForEach(viewModel.vehicles) { vehicle in
-                        VehicleInformationViewCell(
-                            vehicleNumber: "\(vehicle.vehiclePrefix)",
-                            distanceBusTop: "200m",
-                            arrivalForecast: vehicle.arrivalForecast
-                        )
-                    }
+//                ForEach(viewModel.vehicles) { vehicle in
+//                    VehicleInformationViewCell(
+//                        vehicleNumber: "\(vehicle.vehiclePrefix)",
+//                        distanceBusTop: "200m",
+//                        arrivalForecast: vehicle.arrivalForecast
+//                    )
+//                }
+                
+                List(viewModel.vehicles) { vehicle in
+                    VehicleInformationViewCell(
+                        vehicleNumber: "\(vehicle.vehiclePrefix)",
+                        distanceBusTop: "200m",
+                        arrivalForecast: vehicle.arrivalForecast
+                    )
                 }
             }
         }

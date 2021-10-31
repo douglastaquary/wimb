@@ -11,7 +11,7 @@ import CoreLocation
 struct ArrivalOfVehiclesPerTrip: Codable, Identifiable {
     var id = UUID()
     let updatedTime: String
-    let stops: [StopBus]
+    let stops: [StopBus]?
 
     enum CodingKeys: String, CodingKey {
         case updatedTime = "hr"
@@ -26,7 +26,7 @@ struct StopBus: Codable, Identifiable {
     let descript: String
     let longitude: Double
     let latitude: Double
-    let vehicles: [Vehicle]
+    let vehicles: [Vehicle]?
 
     enum CodingKeys: String, CodingKey {
         case stopId = "cp"

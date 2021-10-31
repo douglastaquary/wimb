@@ -40,6 +40,7 @@ extension APISPTrans {
         components.queryItems = [URLQueryItem(name: "codigoLinha", value: "\(tripNumber)")]
         
         let request = URLRequest(url: components.url!)
+        print("\(request)")
         
         return wimbAPI.run(request)
             .map(\.value)
