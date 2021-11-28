@@ -18,9 +18,23 @@ public enum SPTransEndpoint: String {
     case auth = "/Login/Autenticar"
     case trips = "/Linha/Buscar"
     case arrivals = "/Previsao/Linha"
+    case positions = "/Posicao"
+    case positionsPerTrip = "/Posicao/Linha"
 }
 
 extension APISPTrans {
+    
+    static func positionPerTrips(codigoLinha: String, _ path: SPTransEndpoint) -> AnyPublisher<PositionsResponse, Error> {
+        guard var components = URLComponents(url: baseURL.appendingPathComponent(path.rawValue), resolvingAgainstBaseURL: true)
+            else { fatalError("Couldn't create URLComponents") }
+        components.queryItems = [URLQueryItem(name: "codigoLinha", value: codigoLinha)]
+        
+        let request = URLRequest(url: components.url!)
+        
+        return wimbAPI.run(request)
+            .map(\.value)
+            .eraseToAnyPublisher()
+    }
     
     static func fetchTrips(text: String, _ path: SPTransEndpoint) -> AnyPublisher<[Trip], Error> {
         guard var components = URLComponents(url: baseURL.appendingPathComponent(path.rawValue), resolvingAgainstBaseURL: true)

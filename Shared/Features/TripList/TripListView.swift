@@ -43,6 +43,7 @@ struct TripListView: View {
                     .listStyle(GroupedListStyle())
                     .navigationBarTitle(Text("Buscar"))
                 }
+                Spacer()
             }
         }
     }

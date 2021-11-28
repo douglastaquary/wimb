@@ -24,28 +24,16 @@ struct TripDatailView: View {
                 ProgressView()
                 Spacer()
             } else {
-                
-                
-//                for stop in viewModel.stops {
-//                    VStack(alignment: .center) {
-//                      HStack {
-//                          Text(stop.descript).frame(width: 100)
-//                        //Text("Header 2").frame(maxWidth: .infinity)
-//                      }
-//                      List {
-//                        ForEach(0..<data.count) { num in
-//                          HStack {
-//                            Text("Row 1-\(num)").frame(width: 100)
-//                            Text("Row 2-\(num)").frame(maxWidth: .infinity)
-//                          }
-//                        }
-//                      }
-//                    }
-//                }
-//                
-                
+
                 List(viewModel.stops) { stop in
-                    StopViewCell(stopName: stop.descript, vehicles: stop.vehicles ?? [])
+                    if let vehicles = stop.vehicles, !vehicles.isEmpty {
+                        NavigationLink(
+                            destination: TripMapView(viewModel:TripMapViewModel(stops: viewModel.stops, tripCode: "\(viewModel.trip.tripId)")),
+                            label: {
+                                StopViewCell(stopName: stop.descript, vehicles: stop.vehicles ?? [])
+                            })
+            
+                    }
                 }
             }
         }
