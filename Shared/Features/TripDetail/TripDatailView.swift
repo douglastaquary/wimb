@@ -24,20 +24,28 @@ struct TripDatailView: View {
                 ProgressView()
                 Spacer()
             } else {
-//                ForEach(viewModel.vehicles) { vehicle in
-//                    VehicleInformationViewCell(
-//                        vehicleNumber: "\(vehicle.vehiclePrefix)",
-//                        distanceBusTop: "200m",
-//                        arrivalForecast: vehicle.arrivalForecast
-//                    )
-//                }
                 
-                List(viewModel.vehicles) { vehicle in
-                    VehicleInformationViewCell(
-                        vehicleNumber: "\(vehicle.vehiclePrefix)",
-                        distanceBusTop: "200m",
-                        arrivalForecast: vehicle.arrivalForecast
-                    )
+                
+//                for stop in viewModel.stops {
+//                    VStack(alignment: .center) {
+//                      HStack {
+//                          Text(stop.descript).frame(width: 100)
+//                        //Text("Header 2").frame(maxWidth: .infinity)
+//                      }
+//                      List {
+//                        ForEach(0..<data.count) { num in
+//                          HStack {
+//                            Text("Row 1-\(num)").frame(width: 100)
+//                            Text("Row 2-\(num)").frame(maxWidth: .infinity)
+//                          }
+//                        }
+//                      }
+//                    }
+//                }
+//                
+                
+                List(viewModel.stops) { stop in
+                    StopViewCell(stopName: stop.descript, vehicles: stop.vehicles ?? [])
                 }
             }
         }
@@ -63,13 +71,13 @@ struct TripDetailHeaderView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
+            //TagView(color: .blue, text: numberTrip)
             HStack {
-                Image(systemName: "bus")
-                Text("Linha")
+                Image(systemName: "bus").foregroundColor(.blue)
+                TagView(color: .blue, text: numberTrip)
                 Spacer()
             }
             .frame(maxWidth: .infinity)
-            TagView(color: .green, text: numberTrip)
             Text("\(mainTerminal) - \(secondaryTerminal)")
             
         }
