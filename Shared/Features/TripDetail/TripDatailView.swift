@@ -25,12 +25,16 @@ struct TripDatailView: View {
                 Spacer()
             } else {
                 List {
-                    ForEach(viewModel.vehicles) { vehicle in
-                        VehicleInformationViewCell(
-                            vehicleNumber: "\(vehicle.vehiclePrefix)",
-                            distanceBusTop: "200m",
-                            arrivalForecast: vehicle.arrivalForecast
-                        )
+                    ForEach(viewModel.stops) { stop in
+                        StopHeaderView(description: stop.descript, walkingTime: "6 min a pé")
+//                        ForEach(stop.vehicles){ vehicle in
+//                            VehicleInformationViewCell(
+//                                vehicleNumber: "\(vehicle.vehiclePrefix)",
+//                                distanceBusTop: "200m",
+//                                arrivalForecast: ""
+//                            )
+//                        }
+                        
                     }
                 }
             }
@@ -109,3 +113,31 @@ struct TagView_Previews: PreviewProvider {
         TagView(color: .orange, text: "8000-10")
     }
 }
+
+
+struct StopHeaderView: View {
+    
+    var description: String
+    var walkingTime: String
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            Image(systemName: "bus.fill")
+                .cornerRadius(4)
+            Text(description)
+            Text(walkingTime)
+                .font(.footnote)
+
+        }
+    }
+    
+}
+
+
+struct StopHeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        StopHeaderView(description: "Av. Vicente Rao, 1900", walkingTime: "6 min a pé")
+    }
+}
+
+

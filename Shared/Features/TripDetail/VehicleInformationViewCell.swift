@@ -15,6 +15,7 @@ struct VehicleInformationViewCell: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(spacing: 16) {
+                
                 HStack {
                     Image(systemName: "bus.fill")
                         .padding(.leading, 8)

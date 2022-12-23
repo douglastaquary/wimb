@@ -7,27 +7,40 @@
 
 import Foundation
 import CoreLocation
+import MapKit
 
-struct Vehicle: Codable, Identifiable {
+class Vehicle: NSObject, Codable, Identifiable {
     var id = UUID()
-    let vehiclePrefix: Int
-    let arrivalForecast: String
+    let vehiclePrefix: String
+    //let arrivalForecast: String
     let hasAccessibility: Bool
     let lastUpdatedTime: String
-    let longitude: Double
-    let latitude: Double
+    var longitude: Double
+    var latitude: Double
+    
+    public var title: String? {
+        return vehiclePrefix
+    }
     
     enum CodingKeys: String, CodingKey {
         case vehiclePrefix = "p"
-        case arrivalForecast = "t"
+        //case arrivalForecast = "t"
         case hasAccessibility = "a"
         case lastUpdatedTime = "ta"
-        case longitude = "py"
-        case latitude = "px"
+        case longitude = "px"
+        case latitude = "py"
+    }
+
+}
+
+extension Vehicle: MKAnnotation {
+    
+    public var subtitle: String? {
+        return lastUpdatedTime
     }
     
-    var coordinate: CLLocationCoordinate2D {
+    public var coordinate: CLLocationCoordinate2D {
         return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
     }
-    
+
 }

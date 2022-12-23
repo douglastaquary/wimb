@@ -46,7 +46,7 @@ extension TripDetailViewModel {
             return []
         }
         for stop in stops {
-            self.vehicles.append(contentsOf: stop.vehicles)
+            //self.vehicles.append(contentsOf: stop.vehicles)
         }
 
         return self.vehicles

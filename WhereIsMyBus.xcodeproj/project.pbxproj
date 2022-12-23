@@ -9,14 +9,20 @@
 /* Begin PBXBuildFile section */
 		4E44563124BE933B007189AC /* VehicleInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */; };
 		4E44563224BE933B007189AC /* VehicleInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */; };
+		4E44563524BFED0D007189AC /* RecentSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563424BFED0D007189AC /* RecentSearchListView.swift */; };
+		4E44563624BFED0D007189AC /* RecentSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563424BFED0D007189AC /* RecentSearchListView.swift */; };
+		4E44563824C1289A007189AC /* VehiclePositionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563724C1289A007189AC /* VehiclePositionResponse.swift */; };
+		4E44563924C1289A007189AC /* VehiclePositionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563724C1289A007189AC /* VehiclePositionResponse.swift */; };
+		4E44563E24C12D06007189AC /* TrackingVehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563D24C12D06007189AC /* TrackingVehiclesView.swift */; };
+		4E44563F24C12D06007189AC /* TrackingVehiclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563D24C12D06007189AC /* TrackingVehiclesView.swift */; };
 		4EC4EF6424BBF01A007D94D0 /* APISPTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */; };
 		4EC4EF6524BBF01A007D94D0 /* APISPTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */; };
 		4EC4EF6724BBF4EA007D94D0 /* TripsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */; };
 		4EC4EF6824BBF4EA007D94D0 /* TripsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */; };
 		4EC4EF6A24BBF81F007D94D0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6924BBF81F007D94D0 /* Response.swift */; };
 		4EC4EF6B24BBF81F007D94D0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6924BBF81F007D94D0 /* Response.swift */; };
-		4EC4EF6E24BBF981007D94D0 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */; };
-		4EC4EF6F24BBF981007D94D0 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */; };
+		4EC4EF6E24BBF981007D94D0 /* SearchTripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6D24BBF981007D94D0 /* SearchTripViewModel.swift */; };
+		4EC4EF6F24BBF981007D94D0 /* SearchTripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6D24BBF981007D94D0 /* SearchTripViewModel.swift */; };
 		4EC4EF7624BD2887007D94D0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7524BD2887007D94D0 /* SearchView.swift */; };
 		4EC4EF7724BD2887007D94D0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7524BD2887007D94D0 /* SearchView.swift */; };
 		4EC4EF7A24BD2964007D94D0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7924BD2964007D94D0 /* UIApplication+Extensions.swift */; };
@@ -41,10 +47,18 @@
 		4EC4EFA424BD5907007D94D0 /* TripDatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */; };
 		4EC4EFA624BD5990007D94D0 /* TripDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */; };
 		4EC4EFA724BD5990007D94D0 /* TripDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */; };
+		4EDA5FD924C4BCD100354425 /* StopViewAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA5FD824C4BCD100354425 /* StopViewAnnotation.swift */; };
+		4EDA5FDB24C4EE3800354425 /* VehicleViewAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDA5FDA24C4EE3800354425 /* VehicleViewAnnotation.swift */; };
+		4EDB2E9D24C12FFD00513130 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2E9C24C12FFD00513130 /* MapViewCoordinator.swift */; };
+		4EDB2E9E24C12FFD00513130 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2E9C24C12FFD00513130 /* MapViewCoordinator.swift */; };
+		4EDB2EA124C1307C00513130 /* TrackingVehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2EA024C1307C00513130 /* TrackingVehiclesViewModel.swift */; };
+		4EDB2EA224C1307C00513130 /* TrackingVehiclesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2EA024C1307C00513130 /* TrackingVehiclesViewModel.swift */; };
+		4EDB2EA424C1339E00513130 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2EA324C1339E00513130 /* MapView.swift */; };
+		4EDB2EA524C1339E00513130 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDB2EA324C1339E00513130 /* MapView.swift */; };
 		4EFDF8B324BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */; };
 		4EFDF8B424BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */; };
-		4EFDF8B524BBD8A60018FDC3 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */; };
-		4EFDF8B624BBD8A60018FDC3 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */; };
+		4EFDF8B524BBD8A60018FDC3 /* SearchTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* SearchTripView.swift */; };
+		4EFDF8B624BBD8A60018FDC3 /* SearchTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* SearchTripView.swift */; };
 		4EFDF8B724BBD8A60018FDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */; };
 		4EFDF8B824BBD8A60018FDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */; };
 		4EFDF8C324BBDA210018FDC3 /* WimbApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */; };
@@ -55,10 +69,13 @@
 
 /* Begin PBXFileReference section */
 		4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInformationViewCell.swift; sourceTree = "<group>"; };
+		4E44563424BFED0D007189AC /* RecentSearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchListView.swift; sourceTree = "<group>"; };
+		4E44563724C1289A007189AC /* VehiclePositionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePositionResponse.swift; sourceTree = "<group>"; };
+		4E44563D24C12D06007189AC /* TrackingVehiclesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingVehiclesView.swift; sourceTree = "<group>"; };
 		4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISPTrans.swift; sourceTree = "<group>"; };
 		4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsResponse.swift; sourceTree = "<group>"; };
 		4EC4EF6924BBF81F007D94D0 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
+		4EC4EF6D24BBF981007D94D0 /* SearchTripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTripViewModel.swift; sourceTree = "<group>"; };
 		4EC4EF7524BD2887007D94D0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4EC4EF7924BD2964007D94D0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		4EC4EF7C24BD29AC007D94D0 /* WimbConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WimbConstants.swift; sourceTree = "<group>"; };
@@ -71,8 +88,13 @@
 		4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalOfVehiclesPerTrip.swift; sourceTree = "<group>"; };
 		4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDatailView.swift; sourceTree = "<group>"; };
 		4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewModel.swift; sourceTree = "<group>"; };
+		4EDA5FD824C4BCD100354425 /* StopViewAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopViewAnnotation.swift; sourceTree = "<group>"; };
+		4EDA5FDA24C4EE3800354425 /* VehicleViewAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewAnnotation.swift; sourceTree = "<group>"; };
+		4EDB2E9C24C12FFD00513130 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
+		4EDB2EA024C1307C00513130 /* TrackingVehiclesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingVehiclesViewModel.swift; sourceTree = "<group>"; };
+		4EDB2EA324C1339E00513130 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsMyBusApp.swift; sourceTree = "<group>"; };
-		4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
+		4EFDF8A124BBD8A40018FDC3 /* SearchTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTripView.swift; sourceTree = "<group>"; };
 		4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EFDF8A724BBD8A60018FDC3 /* WhereIsMyBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFDF8AA24BBD8A60018FDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,13 +123,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E44563324BFECD6007189AC /*  Recent Searches */ = {
+			isa = PBXGroup;
+			children = (
+				4E44563424BFED0D007189AC /* RecentSearchListView.swift */,
+			);
+			path = " Recent Searches";
+			sourceTree = "<group>";
+		};
 		4EC4EF7024BD2634007D94D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4EDA5FD724C4BCBD00354425 /* Annotations */,
+				4EDB2E9C24C12FFD00513130 /* MapViewCoordinator.swift */,
 				4EC4EF7424BD2874007D94D0 /* SearchView */,
 				4EC4EF7F24BD2A42007D94D0 /* ClearButton.swift */,
 				4EC4EF8224BD2A61007D94D0 /* ButtonView.swift */,
 				4EC4EF8524BD2C3E007D94D0 /* FilterView.swift */,
+				4EDB2EA324C1339E00513130 /* MapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +165,8 @@
 		4EC4EF9224BD5221007D94D0 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4EDB2E9F24C1305C00513130 /* Tracking Vehicles */,
+				4E44563324BFECD6007189AC /*  Recent Searches */,
 				4EC4EFA124BD58EE007D94D0 /* TripDetail */,
 				4EC4EF9324BD522B007D94D0 /* TripList */,
 			);
@@ -142,8 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				4EC4EF9424BD5247007D94D0 /* Cell */,
-				4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */,
-				4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */,
+				4EC4EF6D24BBF981007D94D0 /* SearchTripViewModel.swift */,
+				4EFDF8A124BBD8A40018FDC3 /* SearchTripView.swift */,
 			);
 			path = TripList;
 			sourceTree = "<group>";
@@ -164,6 +199,24 @@
 				4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */,
 			);
 			path = TripDetail;
+			sourceTree = "<group>";
+		};
+		4EDA5FD724C4BCBD00354425 /* Annotations */ = {
+			isa = PBXGroup;
+			children = (
+				4EDA5FD824C4BCD100354425 /* StopViewAnnotation.swift */,
+				4EDA5FDA24C4EE3800354425 /* VehicleViewAnnotation.swift */,
+			);
+			path = Annotations;
+			sourceTree = "<group>";
+		};
+		4EDB2E9F24C1305C00513130 /* Tracking Vehicles */ = {
+			isa = PBXGroup;
+			children = (
+				4E44563D24C12D06007189AC /* TrackingVehiclesView.swift */,
+				4EDB2EA024C1307C00513130 /* TrackingVehiclesViewModel.swift */,
+			);
+			path = "Tracking Vehicles";
 			sourceTree = "<group>";
 		};
 		4EFDF89A24BBD8A40018FDC3 = {
@@ -234,6 +287,7 @@
 				4EC4EF9824BD5548007D94D0 /* Vehicle.swift */,
 				4EC4EF9B24BD5552007D94D0 /* Trip.swift */,
 				4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */,
+				4E44563724C1289A007189AC /* VehiclePositionResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,17 +393,25 @@
 				4EC4EF7624BD2887007D94D0 /* SearchView.swift in Sources */,
 				4EC4EF7D24BD29AC007D94D0 /* WimbConstants.swift in Sources */,
 				4EFDF8C324BBDA210018FDC3 /* WimbApiService.swift in Sources */,
-				4EC4EF6E24BBF981007D94D0 /* TripViewModel.swift in Sources */,
+				4EC4EF6E24BBF981007D94D0 /* SearchTripViewModel.swift in Sources */,
 				4EC4EF6724BBF4EA007D94D0 /* TripsResponse.swift in Sources */,
+				4EDB2EA124C1307C00513130 /* TrackingVehiclesViewModel.swift in Sources */,
+				4EDA5FDB24C4EE3800354425 /* VehicleViewAnnotation.swift in Sources */,
+				4EDA5FD924C4BCD100354425 /* StopViewAnnotation.swift in Sources */,
+				4EDB2EA424C1339E00513130 /* MapView.swift in Sources */,
+				4E44563E24C12D06007189AC /* TrackingVehiclesView.swift in Sources */,
 				4EC4EF9F24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */,
 				4EC4EF8324BD2A61007D94D0 /* ButtonView.swift in Sources */,
+				4EDB2E9D24C12FFD00513130 /* MapViewCoordinator.swift in Sources */,
 				4EC4EF9024BD484E007D94D0 /* TripViewCell.swift in Sources */,
 				4EC4EF9924BD5548007D94D0 /* Vehicle.swift in Sources */,
+				4E44563824C1289A007189AC /* VehiclePositionResponse.swift in Sources */,
 				4EFDF8C624BBDB410018FDC3 /* ApiError.swift in Sources */,
-				4EFDF8B524BBD8A60018FDC3 /* TripListView.swift in Sources */,
+				4EFDF8B524BBD8A60018FDC3 /* SearchTripView.swift in Sources */,
 				4EC4EF6424BBF01A007D94D0 /* APISPTrans.swift in Sources */,
 				4EC4EF8024BD2A42007D94D0 /* ClearButton.swift in Sources */,
 				4EC4EFA624BD5990007D94D0 /* TripDetailViewModel.swift in Sources */,
+				4E44563524BFED0D007189AC /* RecentSearchListView.swift in Sources */,
 				4EFDF8B324BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */,
 				4EC4EF6A24BBF81F007D94D0 /* Response.swift in Sources */,
 				4EC4EF9C24BD5552007D94D0 /* Trip.swift in Sources */,
@@ -367,17 +429,23 @@
 				4EC4EF7724BD2887007D94D0 /* SearchView.swift in Sources */,
 				4EC4EF7E24BD29AC007D94D0 /* WimbConstants.swift in Sources */,
 				4EFDF8C424BBDA210018FDC3 /* WimbApiService.swift in Sources */,
-				4EC4EF6F24BBF981007D94D0 /* TripViewModel.swift in Sources */,
+				4EC4EF6F24BBF981007D94D0 /* SearchTripViewModel.swift in Sources */,
 				4EC4EF6824BBF4EA007D94D0 /* TripsResponse.swift in Sources */,
+				4EDB2EA224C1307C00513130 /* TrackingVehiclesViewModel.swift in Sources */,
+				4EDB2EA524C1339E00513130 /* MapView.swift in Sources */,
+				4E44563F24C12D06007189AC /* TrackingVehiclesView.swift in Sources */,
 				4EC4EFA024BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */,
 				4EC4EF8424BD2A61007D94D0 /* ButtonView.swift in Sources */,
+				4EDB2E9E24C12FFD00513130 /* MapViewCoordinator.swift in Sources */,
 				4EC4EF9124BD484E007D94D0 /* TripViewCell.swift in Sources */,
 				4EC4EF9A24BD5548007D94D0 /* Vehicle.swift in Sources */,
+				4E44563924C1289A007189AC /* VehiclePositionResponse.swift in Sources */,
 				4EFDF8C724BBDB410018FDC3 /* ApiError.swift in Sources */,
-				4EFDF8B624BBD8A60018FDC3 /* TripListView.swift in Sources */,
+				4EFDF8B624BBD8A60018FDC3 /* SearchTripView.swift in Sources */,
 				4EC4EF6524BBF01A007D94D0 /* APISPTrans.swift in Sources */,
 				4EC4EF8124BD2A42007D94D0 /* ClearButton.swift in Sources */,
 				4EC4EFA724BD5990007D94D0 /* TripDetailViewModel.swift in Sources */,
+				4E44563624BFED0D007189AC /* RecentSearchListView.swift in Sources */,
 				4EFDF8B424BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */,
 				4EC4EF6B24BBF81F007D94D0 /* Response.swift in Sources */,
 				4EC4EF9D24BD5552007D94D0 /* Trip.swift in Sources */,
@@ -562,7 +630,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglastaquary..WhereIsMyBus;
 				PRODUCT_NAME = WhereIsMyBus;
 				SDKROOT = macosx;
@@ -586,7 +654,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.16;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.douglastaquary..WhereIsMyBus;
 				PRODUCT_NAME = WhereIsMyBus;
 				SDKROOT = macosx;

@@ -62,3 +62,36 @@ struct FilterView_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
     }
 }
+
+
+struct TimerView: View {
+    @State private var timeRemaining = 10
+//    var timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+
+    //let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
+    var body: some View {
+        ZStack {
+            Text("\(timeRemaining)")
+        }
+//        .onReceive(timer) { _ in
+//            if self.timeRemaining > 0 {
+//                self.timeRemaining -= 1
+//            }
+//        }
+    }
+    
+    
+    func update() {
+        if self.timeRemaining > 0 {
+            self.timeRemaining -= 1
+        }
+    }
+}
+
+
+struct TimerView_Previews: PreviewProvider {
+    static var previews: some View {
+        TimerView()
+    }
+}

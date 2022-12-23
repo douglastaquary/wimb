@@ -11,7 +11,8 @@ struct SearchBarView: View {
     
     @Binding var searchText: String
     @State private var showCancelButton: Bool = false
-    var onCommit: () ->Void = {print("onCommit")}
+    var onCommit: () -> Void = { print("onCommit") }
+    var onClear: () -> Void = { print("onClear") }
     
     var body: some View {
         HStack {
@@ -45,6 +46,7 @@ struct SearchBarView: View {
                     UIApplication.shared.endEditing() // this must be placed before the other commands here
                     self.searchText = ""
                     self.showCancelButton = false
+                    onClear()
                 }
                 .foregroundColor(Color(.systemBlue))
             }

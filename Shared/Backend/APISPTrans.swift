@@ -18,6 +18,8 @@ public enum SPTransEndpoint: String {
     case auth = "/Login/Autenticar"
     case trips = "/Linha/Buscar"
     case arrivals = "/Previsao/Linha"
+    case vehicles = "/Posicao/Linha"
+    case stopsPerTrip = "/Parada/BuscarParadasPorLinha"
 }
 
 extension APISPTrans {
@@ -58,6 +60,31 @@ extension APISPTrans {
             .map { _ in
                 return true
             }
+            .eraseToAnyPublisher()
+    }
+    
+    static func fetchPositions(to numberTrip: String, _ path: SPTransEndpoint) -> AnyPublisher<VehiclePositionResponse, Error> {
+        guard var components = URLComponents(url: baseURL.appendingPathComponent(path.rawValue), resolvingAgainstBaseURL: true)
+            else { fatalError("Couldn't create URLComponents") }
+        components.queryItems = [URLQueryItem(name: "codigoLinha", value: numberTrip)]
+        
+        let request = URLRequest(url: components.url!)
+        print("\nURL REQUEST:\n\(request.url!)\n")
+        
+        return wimbAPI.run(request)
+            .map(\.value)
+            .eraseToAnyPublisher()
+    }
+    
+    static func fetchStops(to numberTrip: String, _ path: SPTransEndpoint) -> AnyPublisher<[StopBus], Error> {
+        guard var components = URLComponents(url: baseURL.appendingPathComponent(path.rawValue), resolvingAgainstBaseURL: true)
+            else { fatalError("Couldn't create URLComponents") }
+        components.queryItems = [URLQueryItem(name: "codigoLinha", value: numberTrip)]
+        
+        let request = URLRequest(url: components.url!)
+        
+        return wimbAPI.run(request)
+            .map(\.value)
             .eraseToAnyPublisher()
     }
 }

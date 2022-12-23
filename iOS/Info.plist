@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>O Wimb precisa da sua localização para mostrar as paradas próximas a você e previsão de chegada dos ônibus</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>O Wimb precisa da sua localização para mostrar as paradas próximas a você e previsão de chegada dos ônibus</string>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>

@@ -26,7 +26,7 @@ struct ButtonView: View {
     }
 }
 
-struct GFButtonView_Previews: PreviewProvider {
+struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
         ButtonView(color: .green, text: "Test button")
             .previewLayout(.sizeThatFits)

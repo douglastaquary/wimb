@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class TripViewModel: ObservableObject {
+class SearchTripViewModel: ObservableObject {
     
     @Published var searchText = ""
     @Published var trips: [Trip] = []
@@ -22,7 +22,7 @@ class TripViewModel: ObservableObject {
     
 }
 
-extension TripViewModel {
+extension SearchTripViewModel {
     
     func checkAuth() {
         loading = true
@@ -34,7 +34,7 @@ extension TripViewModel {
             })
             .sink(receiveCompletion: { _ in },
                   receiveValue: { _ in
-                    print("\n✅ App autenticado na API da SPTrans!\n")
+                    print("\n✅ Autentication ok\n")
                     self.loading = false
                     self.isCheck = true
                     //self.searchTrips()
@@ -54,6 +54,11 @@ extension TripViewModel {
                     self.loading = false
                     self.trips = $0
             })
+    }
+    
+    
+    func clearTrips() {
+        trips.removeAll()
     }
     
 }

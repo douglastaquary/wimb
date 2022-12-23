@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct TripListView: View {
+struct SearchTripView: View {
     
-    @ObservedObject var viewModel = TripViewModel()
+    @ObservedObject var viewModel = SearchTripViewModel()
     
     @State private var searchText = ""
     @State private var hideNavBar = true
@@ -22,16 +22,24 @@ struct TripListView: View {
     var body: some View {
         NavigationView {
             VStack {
-                SearchBarView(searchText: $searchText) {
+                SearchBarView(searchText: self.$searchText) {
                     self.viewModel.searchTrips(text: searchText)
+                } onClear: {
+                    self.viewModel.clearTrips()
                 }
+
                 if viewModel.loading {
                     ProgressView()
+                    Spacer()
                 } else {
+                    if viewModel.trips.isEmpty {
+                        RecentSearchListView(clearAction: {})
+                    }
                     List {
                         ForEach(viewModel.trips) { trip in
                             NavigationLink(
-                                destination: TripDatailView(viewModel: TripDetailViewModel(trip: trip)),
+                                destination: TrackingVehiclesView(viewModel: TrackingVehiclesViewModel(trip: trip)
+                                ),
                                 label: {
                                     TripViewCell(
                                         tripNumber: "\(trip.firstPartOfTheSign)-\(trip.secondPartOfTheSign)", destination: "\(trip.mainTerminal) - \(trip.secondaryTerminal)"
@@ -51,6 +59,6 @@ struct TripListView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TripListView()
+        SearchTripView()
     }
 }
