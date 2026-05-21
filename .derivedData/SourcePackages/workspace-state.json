@@ -1,0 +1,27 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "packages",
+          "kind" : "localSourceControl",
+          "location" : "/Users/douglastaquary/Documents/Projects/Github/iOS/wimb/Packages",
+          "name" : "WIMBPackages"
+        },
+        "state" : {
+          "checkoutState" : {
+            "branch" : "main",
+            "revision" : "052354254422ac1fa2cdf2464c4fb947840d8ec5"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "Packages"
+      }
+    ]
+  },
+  "version" : 5
+}

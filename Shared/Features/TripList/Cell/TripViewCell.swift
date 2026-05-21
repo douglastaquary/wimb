@@ -2,55 +2,57 @@
 //  TripViewCell.swift
 //  WhereIsMyBus
 //
-//  Created by Douglas Taquary on 13/07/20.
-//
 
+import DesignSystem
 import SwiftUI
 
 struct TripViewCell: View {
-    
-    @State var tripNumber: String
-    @State var destination: String
-    
+    let tripNumber: String
+    let destination: String
+
     var body: some View {
-        HStack {
+        HStack(alignment: .top, spacing: 12) {
             TripTagView(tripNumber: tripNumber)
-            VStack {
-                Text(destination)
-                    .font(.footnote)
-            }
+
+            Text(destination)
+                .font(WIMBTypography.footnote)
+                .foregroundColor(WIMBColors.label)
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 }
 
 struct TripViewCell_Previews: PreviewProvider {
     static var previews: some View {
-        TripViewCell(tripNumber: "8000-10", destination: "METRÔ JABAQUARA - CENTRO PARALIMPICO")
+        TripViewCell(
+            tripNumber: "8000-10",
+            destination: "METRÔ JABAQUARA - CENTRO PARALIMPICO"
+        )
     }
 }
 
-
 struct TripTagView: View {
-    
-    @State var tripNumber: String
-    
-    var body: some View {
-        HStack(spacing: 16) {
-            HStack {
-                Image(systemName: "bus").foregroundColor(.gray)
-                Text(tripNumber)
-                    .font(.footnote)
-                    .fontWeight(.medium)
-            }
-            .padding(.leading, 6)
-            .padding(.trailing, 6)
-            .padding(.top, 4)
-            .padding(.bottom, 4)
-            .border(Color.gray, width: 1)
-            .cornerRadius(4)
-        }
-        .padding(8)
+    let tripNumber: String
 
+    var body: some View {
+        HStack(spacing: 4) {
+            Image(systemName: "bus.fill")
+                .font(.caption2)
+                .foregroundColor(WIMBColors.busActive)
+            Text(tripNumber)
+                .font(WIMBTypography.caption)
+                .fontWeight(.bold)
+                .foregroundColor(WIMBColors.label)
+        }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 5)
+        .background(WIMBColors.surface)
+        .overlay(
+            RoundedRectangle(cornerRadius: 8, style: .continuous)
+                .stroke(WIMBColors.sheetHandle, lineWidth: 1)
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 }
 

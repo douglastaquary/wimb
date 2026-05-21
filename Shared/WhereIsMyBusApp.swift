@@ -2,16 +2,18 @@
 //  WhereIsMyBusApp.swift
 //  Shared
 //
-//  Created by Douglas Taquary on 12/07/20.
-//
 
 import SwiftUI
+import TransportEngine
 
 @main
 struct WhereIsMyBusApp: App {
+    @StateObject private var trackingState = WIMBAppEnvironment.makeTrackingState()
+
     var body: some Scene {
         WindowGroup {
             TripListView()
+                .environmentObject(trackingState)
         }
     }
 }

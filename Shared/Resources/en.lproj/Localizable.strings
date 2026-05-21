@@ -1,0 +1,33 @@
+/* Home */
+"home.title" = "Where are you going?";
+"home.subtitle" = "Type the bus line number or name";
+
+/* Common */
+"common.back" = "Back";
+"common.updated" = "Updated";
+
+/* Tracking */
+"tracking.section" = "Your lines";
+"tracking.stop" = "Stop tracking line %@";
+
+/* Search */
+"search.placeholder" = "Line number or name";
+"search.cancel" = "Cancel";
+"search.results" = "Results";
+"search.error.title" = "Something went wrong";
+"search.empty.title" = "No results";
+"search.empty.message" = "Try another line number or name";
+
+/* Line detail */
+"line.stops.title" = "Stops with buses arriving";
+"line.stops.empty.title" = "No forecasts yet";
+"line.stops.empty.message" = "We couldn't find buses on this line right now. Try again in a moment.";
+"line.busesOnMap" = "%d on the map";
+
+/* Vehicle */
+"vehicle.accessible" = "Accessible bus";
+
+/* Map overlay */
+"map.idle" = "Search for a line to get started";
+"map.tracking" = "%d buses · %d line(s)";
+"map.refresh" = "Refresh bus positions";

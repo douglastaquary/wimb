@@ -2,54 +2,51 @@
 //  SearchView.swift
 //  WhereIsMyBus
 //
-//  Created by Douglas Taquary on 13/07/20.
-//
 
 import SwiftUI
 
 struct SearchBarView: View {
-    
+
     @Binding var searchText: String
-    @State private var showCancelButton: Bool = false
-    var onCommit: () ->Void = {print("onCommit")}
-    
+    @State private var showCancelButton = false
+    var onCommit: () -> Void = {}
+
     var body: some View {
         HStack {
             HStack {
                 Image(systemName: "magnifyingglass")
-                
-                // Search text field
-                ZStack (alignment: .leading) {
-                    if searchText.isEmpty { // Separate text for placeholder to give it the proper color
-                        Text("por nome, número")
+
+                ZStack(alignment: .leading) {
+                    if searchText.isEmpty {
+                        Text(WIMBL10n.searchPlaceholder)
                     }
                     TextField("", text: $searchText, onEditingChanged: { isEditing in
-                        self.showCancelButton = true
-                    }, onCommit: onCommit).foregroundColor(.primary)
+                        showCancelButton = isEditing
+                    }, onCommit: onCommit)
+                    .foregroundColor(.primary)
                 }
-                // Clear button
+
                 Button(action: {
-                    self.searchText = ""
+                    searchText = ""
                 }) {
-                    Image(systemName: "xmark.circle.fill").opacity(searchText == "" ? 0 : 1)
+                    Image(systemName: "xmark.circle.fill")
+                        .opacity(searchText.isEmpty ? 0 : 1)
                 }
             }
             .padding(EdgeInsets(top: 8, leading: 6, bottom: 8, trailing: 6))
-            .foregroundColor(.secondary) // For magnifying glass and placeholder test
+            .foregroundColor(.secondary)
             .background(Color(.tertiarySystemFill))
-            .cornerRadius(10.0)
-            
-            if showCancelButton  {
-                // Cancel button
-                Button("Cancelar") {
-                    UIApplication.shared.endEditing() // this must be placed before the other commands here
-                    self.searchText = ""
-                    self.showCancelButton = false
+            .cornerRadius(10)
+
+            if showCancelButton {
+                Button(WIMBL10n.searchCancel) {
+                    UIApplication.shared.endEditing()
+                    searchText = ""
+                    showCancelButton = false
                 }
                 .foregroundColor(Color(.systemBlue))
             }
         }
         .padding(.horizontal)
-        //.navigationBarHidden(showCancelButton)
     }
 }

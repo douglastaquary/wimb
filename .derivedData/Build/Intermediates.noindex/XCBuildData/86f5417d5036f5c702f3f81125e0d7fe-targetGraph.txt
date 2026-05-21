@@ -1,0 +1,36 @@
+Target dependency graph (11 targets)
+WIMBCore in WIMBPackages, no dependencies
+NetworkClient in WIMBPackages, depends on:
+WIMBCore in WIMBPackages (explicit)
+TransportEngine in WIMBPackages, depends on:
+WIMBCore in WIMBPackages (explicit)
+NetworkClient in WIMBPackages (explicit)
+DesignSystem in WIMBPackages, no dependencies
+MapFeature in WIMBPackages, depends on:
+WIMBCore in WIMBPackages (explicit)
+NetworkClient in WIMBPackages (explicit)
+TransportEngine in WIMBPackages (explicit)
+DesignSystem in WIMBPackages (explicit)
+MapFeature in WIMBPackages, depends on:
+MapFeature in WIMBPackages (explicit)
+WIMBCore in WIMBPackages (explicit)
+NetworkClient in WIMBPackages (explicit)
+TransportEngine in WIMBPackages (explicit)
+DesignSystem in WIMBPackages (explicit)
+DesignSystem in WIMBPackages, depends on:
+DesignSystem in WIMBPackages (explicit)
+TransportEngine in WIMBPackages, depends on:
+TransportEngine in WIMBPackages (explicit)
+WIMBCore in WIMBPackages (explicit)
+NetworkClient in WIMBPackages (explicit)
+NetworkClient in WIMBPackages, depends on:
+NetworkClient in WIMBPackages (explicit)
+WIMBCore in WIMBPackages (explicit)
+WIMBCore in WIMBPackages, depends on:
+WIMBCore in WIMBPackages (explicit)
+iOS in WhereIsMyBus, depends on:
+MapFeature in WIMBPackages (explicit)
+DesignSystem in WIMBPackages (explicit)
+TransportEngine in WIMBPackages (explicit)
+NetworkClient in WIMBPackages (explicit)
+WIMBCore in WIMBPackages (explicit)

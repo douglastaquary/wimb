@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+	precomposeunicode = true
+	symlinks = true
+	usebuiltinfsmonitor = false
+[remote "origin"]
+	url = /Users/douglastaquary/Documents/Projects/Github/iOS/wimb/Packages
+	fetch = +refs/*:refs/*
+	mirror = true

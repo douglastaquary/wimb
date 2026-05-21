@@ -1,0 +1,33 @@
+/* Home */
+"home.title" = "Pra onde você vai?";
+"home.subtitle" = "Digite o número ou nome da linha";
+
+/* Common */
+"common.back" = "Voltar";
+"common.updated" = "Atualizado";
+
+/* Tracking */
+"tracking.section" = "Suas linhas";
+"tracking.stop" = "Parar de acompanhar a linha %@";
+
+/* Search */
+"search.placeholder" = "Número ou nome da linha";
+"search.cancel" = "Cancelar";
+"search.results" = "Encontramos";
+"search.error.title" = "Ops, algo deu errado";
+"search.empty.title" = "Nada por aqui";
+"search.empty.message" = "Tenta buscar pelo número ou pelo nome da linha";
+
+/* Line detail */
+"line.stops.title" = "Paradas com ônibus chegando";
+"line.stops.empty.title" = "Ainda sem previsões";
+"line.stops.empty.message" = "Não achamos ônibus nesta linha agora. Tenta de novo em instantes.";
+"line.busesOnMap" = "%d no mapa";
+
+/* Vehicle */
+"vehicle.accessible" = "Ônibus adaptado";
+
+/* Map overlay */
+"map.idle" = "Busque uma linha pra começar";
+"map.tracking" = "%d ônibus · %d linha(s)";
+"map.refresh" = "Atualizar posição dos ônibus";

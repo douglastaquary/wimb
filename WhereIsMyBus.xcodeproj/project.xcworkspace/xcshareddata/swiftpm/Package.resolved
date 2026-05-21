@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "packages",
+      "kind" : "localSourceControl",
+      "location" : "/Users/douglastaquary/Documents/Projects/Github/iOS/wimb/Packages",
+      "state" : {
+        "branch" : "main",
+        "revision" : "85f4cae8eaa5aae001fcc570aaf69b072b008085"
+      }
+    }
+  ],
+  "version" : 2
+}

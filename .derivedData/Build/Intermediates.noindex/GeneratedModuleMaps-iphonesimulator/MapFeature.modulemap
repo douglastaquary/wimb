@@ -1,0 +1,4 @@
+module MapFeature {
+header "MapFeature-Swift.h"
+export *
+}

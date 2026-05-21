@@ -1,0 +1,17 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "7a4be72dc0a13ae81e616220b197b89b44b22ab714afa8100d5b2d3d98bc7c0b"
+build_start_time: [1779402407, 808069944]
+build_end_time: [1779402407, 872857093]
+inputs:
+  ? "/Users/douglastaquary/Documents/Projects/Github/iOS/wimb/.derivedData/SourcePackages/checkouts/Packages/DesignSystem/Sources/DesignSystem/Components/WIMBBottomSheet.swift"
+  : !private [1779402395, 711528778]
+  ? "/Users/douglastaquary/Documents/Projects/Github/iOS/wimb/.derivedData/SourcePackages/checkouts/Packages/DesignSystem/Sources/DesignSystem/Components/WIMBEmptyStateView.swift"
+  : !private [1779402395, 712205886]
+  ? "/Users/douglastaquary/Documents/Projects/Github/iOS/wimb/.derivedData/SourcePackages/checkouts/Packages/DesignSystem/Sources/DesignSystem/Components/WIMBListRow.swift"
+  : !private [1779402395, 714304208]
+  ? "/Users/douglastaquary/Documents/Projects/Github/iOS/wimb/.derivedData/SourcePackages/checkouts/Packages/DesignSystem/Sources/DesignSystem/Components/WIMBShapes.swift"
+  : !private [1779402395, 717366456]
+  ? "/Users/douglastaquary/Documents/Projects/Github/iOS/wimb/.derivedData/SourcePackages/checkouts/Packages/DesignSystem/Sources/DesignSystem/Tokens/WIMBColors.swift"
+  : !private [1779402395, 719270706]
+  ? "/Users/douglastaquary/Documents/Projects/Github/iOS/wimb/.derivedData/SourcePackages/checkouts/Packages/DesignSystem/Sources/DesignSystem/Tokens/WIMBTypography.swift"
+  : !private [1779402395, 720165967]

@@ -7,82 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E2580C227541B5900A6A25B /* MapAnnotationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2580C127541B5900A6A25B /* MapAnnotationItem.swift */; };
-		4E2580C427541BE900A6A25B /* Map+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2580C327541BE900A6A25B /* Map+Extensions.swift */; };
-		4E2580C62754302900A6A25B /* StopBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2580C52754302900A6A25B /* StopBus.swift */; };
-		4E2580C82754360A00A6A25B /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2580C72754360A00A6A25B /* LocationModel.swift */; };
-		4E2580CA2754368000A6A25B /* TripMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2580C92754368000A6A25B /* TripMapViewModel.swift */; };
-		4E44563124BE933B007189AC /* VehicleInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */; };
-		4E44563224BE933B007189AC /* VehicleInformationViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */; };
-		4EC2D5042753D42C006B15C7 /* TripMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC2D5032753D42B006B15C7 /* TripMapView.swift */; };
-		4EC4EF6424BBF01A007D94D0 /* APISPTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */; };
-		4EC4EF6524BBF01A007D94D0 /* APISPTrans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */; };
-		4EC4EF6724BBF4EA007D94D0 /* TripsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */; };
-		4EC4EF6824BBF4EA007D94D0 /* TripsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */; };
-		4EC4EF6A24BBF81F007D94D0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6924BBF81F007D94D0 /* Response.swift */; };
-		4EC4EF6B24BBF81F007D94D0 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6924BBF81F007D94D0 /* Response.swift */; };
-		4EC4EF6E24BBF981007D94D0 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */; };
-		4EC4EF6F24BBF981007D94D0 /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */; };
 		4EC4EF7624BD2887007D94D0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7524BD2887007D94D0 /* SearchView.swift */; };
 		4EC4EF7724BD2887007D94D0 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7524BD2887007D94D0 /* SearchView.swift */; };
 		4EC4EF7A24BD2964007D94D0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7924BD2964007D94D0 /* UIApplication+Extensions.swift */; };
 		4EC4EF7B24BD2964007D94D0 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7924BD2964007D94D0 /* UIApplication+Extensions.swift */; };
-		4EC4EF7D24BD29AC007D94D0 /* WimbConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7C24BD29AC007D94D0 /* WimbConstants.swift */; };
-		4EC4EF7E24BD29AC007D94D0 /* WimbConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7C24BD29AC007D94D0 /* WimbConstants.swift */; };
-		4EC4EF8024BD2A42007D94D0 /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7F24BD2A42007D94D0 /* ClearButton.swift */; };
-		4EC4EF8124BD2A42007D94D0 /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF7F24BD2A42007D94D0 /* ClearButton.swift */; };
-		4EC4EF8324BD2A61007D94D0 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8224BD2A61007D94D0 /* ButtonView.swift */; };
-		4EC4EF8424BD2A61007D94D0 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8224BD2A61007D94D0 /* ButtonView.swift */; };
-		4EC4EF8624BD2C3E007D94D0 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8524BD2C3E007D94D0 /* FilterView.swift */; };
-		4EC4EF8724BD2C3E007D94D0 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8524BD2C3E007D94D0 /* FilterView.swift */; };
 		4EC4EF9024BD484E007D94D0 /* TripViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8F24BD484E007D94D0 /* TripViewCell.swift */; };
 		4EC4EF9124BD484E007D94D0 /* TripViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF8F24BD484E007D94D0 /* TripViewCell.swift */; };
-		4EC4EF9924BD5548007D94D0 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9824BD5548007D94D0 /* Vehicle.swift */; };
-		4EC4EF9A24BD5548007D94D0 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9824BD5548007D94D0 /* Vehicle.swift */; };
-		4EC4EF9C24BD5552007D94D0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9B24BD5552007D94D0 /* Trip.swift */; };
-		4EC4EF9D24BD5552007D94D0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9B24BD5552007D94D0 /* Trip.swift */; };
-		4EC4EF9F24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */; };
-		4EC4EFA024BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */; };
-		4EC4EFA324BD5907007D94D0 /* TripDatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */; };
-		4EC4EFA424BD5907007D94D0 /* TripDatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */; };
-		4EC4EFA624BD5990007D94D0 /* TripDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */; };
-		4EC4EFA724BD5990007D94D0 /* TripDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */; };
 		4EFDF8B324BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */; };
 		4EFDF8B424BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */; };
 		4EFDF8B524BBD8A60018FDC3 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */; };
 		4EFDF8B624BBD8A60018FDC3 /* TripListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */; };
 		4EFDF8B724BBD8A60018FDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */; };
 		4EFDF8B824BBD8A60018FDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */; };
-		4EFDF8C324BBDA210018FDC3 /* WimbApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */; };
-		4EFDF8C424BBDA210018FDC3 /* WimbApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */; };
-		4EFDF8C624BBDB410018FDC3 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C524BBDB410018FDC3 /* ApiError.swift */; };
-		4EFDF8C724BBDB410018FDC3 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFDF8C524BBDB410018FDC3 /* ApiError.swift */; };
+		A1B2C3D124BBD8A60018FDC3 /* WIMBAppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D024BBD8A60018FDC3 /* WIMBAppEnvironment.swift */; };
+		A1B2C3D224BBD8A60018FDC3 /* WIMBAppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D024BBD8A60018FDC3 /* WIMBAppEnvironment.swift */; };
+		A1B2C3DC24BBD8A60018FDC3 /* TripHomePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3DB24BBD8A60018FDC3 /* TripHomePanel.swift */; };
+		A1B2C3DD24BBD8A60018FDC3 /* TripHomePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3DB24BBD8A60018FDC3 /* TripHomePanel.swift */; };
+		A1B2C3E324BBD8A60018FDC3 /* TripLineDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E424BBD8A60018FDC3 /* TripLineDetailPanel.swift */; };
+		A1B2C3E524BBD8A60018FDC3 /* TripLineDetailPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3E424BBD8A60018FDC3 /* TripLineDetailPanel.swift */; };
+		B2L10N01124BBD8A60018FDC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2L10N00124BBD8A60018FDC3 /* Localizable.strings */; };
+		B2L10N01224BBD8A60018FDC3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2L10N00124BBD8A60018FDC3 /* Localizable.strings */; };
+		B2L10N02124BBD8A60018FDC3 /* WIMBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2L10N00424BBD8A60018FDC3 /* WIMBL10n.swift */; };
+		B2L10N02224BBD8A60018FDC3 /* WIMBL10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2L10N00424BBD8A60018FDC3 /* WIMBL10n.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E2580C127541B5900A6A25B /* MapAnnotationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationItem.swift; sourceTree = "<group>"; };
-		4E2580C327541BE900A6A25B /* Map+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Map+Extensions.swift"; sourceTree = "<group>"; };
-		4E2580C52754302900A6A25B /* StopBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopBus.swift; sourceTree = "<group>"; };
-		4E2580C72754360A00A6A25B /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
-		4E2580C92754368000A6A25B /* TripMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapViewModel.swift; sourceTree = "<group>"; };
-		4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInformationViewCell.swift; sourceTree = "<group>"; };
-		4EC2D5032753D42B006B15C7 /* TripMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripMapView.swift; sourceTree = "<group>"; };
-		4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISPTrans.swift; sourceTree = "<group>"; };
-		4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsResponse.swift; sourceTree = "<group>"; };
-		4EC4EF6924BBF81F007D94D0 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
 		4EC4EF7524BD2887007D94D0 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		4EC4EF7924BD2964007D94D0 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
-		4EC4EF7C24BD29AC007D94D0 /* WimbConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WimbConstants.swift; sourceTree = "<group>"; };
-		4EC4EF7F24BD2A42007D94D0 /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
-		4EC4EF8224BD2A61007D94D0 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		4EC4EF8524BD2C3E007D94D0 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		4EC4EF8F24BD484E007D94D0 /* TripViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewCell.swift; sourceTree = "<group>"; };
-		4EC4EF9824BD5548007D94D0 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
-		4EC4EF9B24BD5552007D94D0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
-		4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalOfVehiclesPerTrip.swift; sourceTree = "<group>"; };
-		4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDatailView.swift; sourceTree = "<group>"; };
-		4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewModel.swift; sourceTree = "<group>"; };
 		4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsMyBusApp.swift; sourceTree = "<group>"; };
 		4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripListView.swift; sourceTree = "<group>"; };
 		4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,8 +43,12 @@
 		4EFDF8AF24BBD8A60018FDC3 /* WhereIsMyBus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsMyBus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EFDF8B124BBD8A60018FDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EFDF8B224BBD8A60018FDC3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WimbApiService.swift; sourceTree = "<group>"; };
-		4EFDF8C524BBDB410018FDC3 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		A1B2C3D024BBD8A60018FDC3 /* WIMBAppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIMBAppEnvironment.swift; sourceTree = "<group>"; };
+		A1B2C3DB24BBD8A60018FDC3 /* TripHomePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripHomePanel.swift; sourceTree = "<group>"; };
+		A1B2C3E424BBD8A60018FDC3 /* TripLineDetailPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripLineDetailPanel.swift; sourceTree = "<group>"; };
+		B2L10N00224BBD8A60018FDC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B2L10N00324BBD8A60018FDC3 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		B2L10N00424BBD8A60018FDC3 /* WIMBL10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIMBL10n.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,30 +69,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E2580C027541B4200A6A25B /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				4E2580C127541B5900A6A25B /* MapAnnotationItem.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		4EC2D5022753D400006B15C7 /* MapView */ = {
-			isa = PBXGroup;
-			children = (
-				4EC2D5032753D42B006B15C7 /* TripMapView.swift */,
-				4E2580C92754368000A6A25B /* TripMapViewModel.swift */,
-			);
-			path = MapView;
-			sourceTree = "<group>";
-		};
 		4EC4EF7024BD2634007D94D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4EC4EF7424BD2874007D94D0 /* SearchView */,
-				4EC4EF7F24BD2A42007D94D0 /* ClearButton.swift */,
-				4EC4EF8224BD2A61007D94D0 /* ButtonView.swift */,
-				4EC4EF8524BD2C3E007D94D0 /* FilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,8 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				4EC4EF7924BD2964007D94D0 /* UIApplication+Extensions.swift */,
-				4EC4EF7C24BD29AC007D94D0 /* WimbConstants.swift */,
-				4E2580C327541BE900A6A25B /* Map+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,9 +96,7 @@
 		4EC4EF9224BD5221007D94D0 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				4EC2D5022753D400006B15C7 /* MapView */,
-				4EC4EFA124BD58EE007D94D0 /* TripDetail */,
-				4EC4EF9324BD522B007D94D0 /* TripList */,
+								4EC4EF9324BD522B007D94D0 /* TripList */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -173,8 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				4EC4EF9424BD5247007D94D0 /* Cell */,
-				4EC4EF6D24BBF981007D94D0 /* TripViewModel.swift */,
 				4EFDF8A124BBD8A40018FDC3 /* TripListView.swift */,
+				A1B2C3DB24BBD8A60018FDC3 /* TripHomePanel.swift */,
+				A1B2C3E424BBD8A60018FDC3 /* TripLineDetailPanel.swift */,
 			);
 			path = TripList;
 			sourceTree = "<group>";
@@ -185,16 +118,6 @@
 				4EC4EF8F24BD484E007D94D0 /* TripViewCell.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		4EC4EFA124BD58EE007D94D0 /* TripDetail */ = {
-			isa = PBXGroup;
-			children = (
-				4EC4EFA224BD5907007D94D0 /* TripDatailView.swift */,
-				4EC4EFA524BD5990007D94D0 /* TripDetailViewModel.swift */,
-				4E44563024BE933B007189AC /* VehicleInformationViewCell.swift */,
-			);
-			path = TripDetail;
 			sourceTree = "<group>";
 		};
 		4EFDF89A24BBD8A40018FDC3 = {
@@ -210,14 +133,49 @@
 		4EFDF89F24BBD8A40018FDC3 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A1B2C3CF24BBD8A60018FDC3 /* App */,
 				4EC4EF9224BD5221007D94D0 /* Features */,
 				4EC4EF7824BD2947007D94D0 /* Extensions */,
 				4EC4EF7024BD2634007D94D0 /* Views */,
-				4EFDF8C124BBD9B80018FDC3 /* Backend */,
+				B2L10N03124BBD8A60018FDC3 /* Localization */,
+				B2L10N03024BBD8A60018FDC3 /* Resources */,
 				4EFDF8A024BBD8A40018FDC3 /* WhereIsMyBusApp.swift */,
 				4EFDF8A224BBD8A60018FDC3 /* Assets.xcassets */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		B2L10N03024BBD8A60018FDC3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2L10N00124BBD8A60018FDC3 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2L10N03124BBD8A60018FDC3 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				B2L10N00424BBD8A60018FDC3 /* WIMBL10n.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		B2L10N00124BBD8A60018FDC3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2L10N00224BBD8A60018FDC3 /* en */,
+				B2L10N00324BBD8A60018FDC3 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A1B2C3CF24BBD8A60018FDC3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A1B2C3D024BBD8A60018FDC3 /* WIMBAppEnvironment.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 		4EFDF8A824BBD8A60018FDC3 /* Products */ = {
@@ -246,32 +204,6 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		4EFDF8C124BBD9B80018FDC3 /* Backend */ = {
-			isa = PBXGroup;
-			children = (
-				4E2580C027541B4200A6A25B /* Protocols */,
-				4EFDF8C824BBDB460018FDC3 /* Models */,
-				4EFDF8C224BBDA210018FDC3 /* WimbApiService.swift */,
-				4EC4EF6324BBF01A007D94D0 /* APISPTrans.swift */,
-			);
-			path = Backend;
-			sourceTree = "<group>";
-		};
-		4EFDF8C824BBDB460018FDC3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				4EFDF8C524BBDB410018FDC3 /* ApiError.swift */,
-				4EC4EF6624BBF4EA007D94D0 /* TripsResponse.swift */,
-				4EC4EF6924BBF81F007D94D0 /* Response.swift */,
-				4EC4EF9824BD5548007D94D0 /* Vehicle.swift */,
-				4EC4EF9B24BD5552007D94D0 /* Trip.swift */,
-				4EC4EF9E24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift */,
-				4E2580C52754302900A6A25B /* StopBus.swift */,
-				4E2580C72754360A00A6A25B /* LocationModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +220,13 @@
 			dependencies = (
 			);
 			name = iOS;
+			packageProductDependencies = (
+				A1B2C3D524BBD8A60018FDC3 /* WIMBCore */,
+				A1B2C3D624BBD8A60018FDC3 /* NetworkClient */,
+				A1B2C3D724BBD8A60018FDC3 /* TransportEngine */,
+				A1B2C3DE24BBD8A60018FDC3 /* DesignSystem */,
+				A1B2C3DF24BBD8A60018FDC3 /* MapFeature */,
+			);
 			productName = iOS;
 			productReference = 4EFDF8A724BBD8A60018FDC3 /* WhereIsMyBus.app */;
 			productType = "com.apple.product-type.application";
@@ -305,6 +244,13 @@
 			dependencies = (
 			);
 			name = macOS;
+			packageProductDependencies = (
+				A1B2C3D524BBD8A60018FDC3 /* WIMBCore */,
+				A1B2C3D624BBD8A60018FDC3 /* NetworkClient */,
+				A1B2C3D724BBD8A60018FDC3 /* TransportEngine */,
+				A1B2C3DE24BBD8A60018FDC3 /* DesignSystem */,
+				A1B2C3DF24BBD8A60018FDC3 /* MapFeature */,
+			);
 			productName = macOS;
 			productReference = 4EFDF8AF24BBD8A60018FDC3 /* WhereIsMyBus.app */;
 			productType = "com.apple.product-type.application";
@@ -328,13 +274,17 @@
 			};
 			buildConfigurationList = 4EFDF89E24BBD8A40018FDC3 /* Build configuration list for PBXProject "WhereIsMyBus" */;
 			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
+			developmentRegion = "pt-BR";
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 4EFDF89A24BBD8A40018FDC3;
+			packageReferences = (
+				A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */,
+			);
 			productRefGroup = 4EFDF8A824BBD8A60018FDC3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -351,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EFDF8B724BBD8A60018FDC3 /* Assets.xcassets in Resources */,
+				B2L10N01124BBD8A60018FDC3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EFDF8B824BBD8A60018FDC3 /* Assets.xcassets in Resources */,
+				B2L10N01224BBD8A60018FDC3 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,33 +321,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EC2D5042753D42C006B15C7 /* TripMapView.swift in Sources */,
 				4EC4EF7A24BD2964007D94D0 /* UIApplication+Extensions.swift in Sources */,
 				4EC4EF7624BD2887007D94D0 /* SearchView.swift in Sources */,
-				4EC4EF7D24BD29AC007D94D0 /* WimbConstants.swift in Sources */,
-				4EFDF8C324BBDA210018FDC3 /* WimbApiService.swift in Sources */,
-				4EC4EF6E24BBF981007D94D0 /* TripViewModel.swift in Sources */,
-				4E2580C62754302900A6A25B /* StopBus.swift in Sources */,
-				4EC4EF6724BBF4EA007D94D0 /* TripsResponse.swift in Sources */,
-				4EC4EF9F24BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */,
-				4EC4EF8324BD2A61007D94D0 /* ButtonView.swift in Sources */,
-				4E2580C82754360A00A6A25B /* LocationModel.swift in Sources */,
 				4EC4EF9024BD484E007D94D0 /* TripViewCell.swift in Sources */,
-				4EC4EF9924BD5548007D94D0 /* Vehicle.swift in Sources */,
-				4EFDF8C624BBDB410018FDC3 /* ApiError.swift in Sources */,
 				4EFDF8B524BBD8A60018FDC3 /* TripListView.swift in Sources */,
-				4EC4EF6424BBF01A007D94D0 /* APISPTrans.swift in Sources */,
-				4E2580CA2754368000A6A25B /* TripMapViewModel.swift in Sources */,
-				4EC4EF8024BD2A42007D94D0 /* ClearButton.swift in Sources */,
-				4EC4EFA624BD5990007D94D0 /* TripDetailViewModel.swift in Sources */,
-				4E2580C427541BE900A6A25B /* Map+Extensions.swift in Sources */,
 				4EFDF8B324BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */,
-				4EC4EF6A24BBF81F007D94D0 /* Response.swift in Sources */,
-				4EC4EF9C24BD5552007D94D0 /* Trip.swift in Sources */,
-				4EC4EFA324BD5907007D94D0 /* TripDatailView.swift in Sources */,
-				4E2580C227541B5900A6A25B /* MapAnnotationItem.swift in Sources */,
-				4EC4EF8624BD2C3E007D94D0 /* FilterView.swift in Sources */,
-				4E44563124BE933B007189AC /* VehicleInformationViewCell.swift in Sources */,
+				A1B2C3D124BBD8A60018FDC3 /* WIMBAppEnvironment.swift in Sources */,
+				A1B2C3DC24BBD8A60018FDC3 /* TripHomePanel.swift in Sources */,
+				A1B2C3E324BBD8A60018FDC3 /* TripLineDetailPanel.swift in Sources */,
+				B2L10N02124BBD8A60018FDC3 /* WIMBL10n.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,25 +339,13 @@
 			files = (
 				4EC4EF7B24BD2964007D94D0 /* UIApplication+Extensions.swift in Sources */,
 				4EC4EF7724BD2887007D94D0 /* SearchView.swift in Sources */,
-				4EC4EF7E24BD29AC007D94D0 /* WimbConstants.swift in Sources */,
-				4EFDF8C424BBDA210018FDC3 /* WimbApiService.swift in Sources */,
-				4EC4EF6F24BBF981007D94D0 /* TripViewModel.swift in Sources */,
-				4EC4EF6824BBF4EA007D94D0 /* TripsResponse.swift in Sources */,
-				4EC4EFA024BD57E6007D94D0 /* ArrivalOfVehiclesPerTrip.swift in Sources */,
-				4EC4EF8424BD2A61007D94D0 /* ButtonView.swift in Sources */,
 				4EC4EF9124BD484E007D94D0 /* TripViewCell.swift in Sources */,
-				4EC4EF9A24BD5548007D94D0 /* Vehicle.swift in Sources */,
-				4EFDF8C724BBDB410018FDC3 /* ApiError.swift in Sources */,
 				4EFDF8B624BBD8A60018FDC3 /* TripListView.swift in Sources */,
-				4EC4EF6524BBF01A007D94D0 /* APISPTrans.swift in Sources */,
-				4EC4EF8124BD2A42007D94D0 /* ClearButton.swift in Sources */,
-				4EC4EFA724BD5990007D94D0 /* TripDetailViewModel.swift in Sources */,
 				4EFDF8B424BBD8A60018FDC3 /* WhereIsMyBusApp.swift in Sources */,
-				4EC4EF6B24BBF81F007D94D0 /* Response.swift in Sources */,
-				4EC4EF9D24BD5552007D94D0 /* Trip.swift in Sources */,
-				4EC4EFA424BD5907007D94D0 /* TripDatailView.swift in Sources */,
-				4EC4EF8724BD2C3E007D94D0 /* FilterView.swift in Sources */,
-				4E44563224BE933B007189AC /* VehicleInformationViewCell.swift in Sources */,
+				A1B2C3D224BBD8A60018FDC3 /* WIMBAppEnvironment.swift in Sources */,
+				A1B2C3DD24BBD8A60018FDC3 /* TripHomePanel.swift in Sources */,
+				A1B2C3E524BBD8A60018FDC3 /* TripLineDetailPanel.swift in Sources */,
+				B2L10N02224BBD8A60018FDC3 /* WIMBL10n.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +403,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -534,6 +458,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -550,7 +476,7 @@
 				DEVELOPMENT_TEAM = 6V95FQX348;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,7 +485,7 @@
 				PRODUCT_NAME = WhereIsMyBus;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -572,7 +498,7 @@
 				DEVELOPMENT_TEAM = 6V95FQX348;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,7 +507,7 @@
 				PRODUCT_NAME = WhereIsMyBus;
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -667,6 +593,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "Packages";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1B2C3D524BBD8A60018FDC3 /* WIMBCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
+			productName = WIMBCore;
+		};
+		A1B2C3D624BBD8A60018FDC3 /* NetworkClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
+			productName = NetworkClient;
+		};
+		A1B2C3D724BBD8A60018FDC3 /* TransportEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
+			productName = TransportEngine;
+		};
+		A1B2C3DE24BBD8A60018FDC3 /* DesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
+			productName = DesignSystem;
+		};
+		A1B2C3DF24BBD8A60018FDC3 /* MapFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
+			productName = MapFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4EFDF89B24BBD8A40018FDC3 /* Project object */;
 }
