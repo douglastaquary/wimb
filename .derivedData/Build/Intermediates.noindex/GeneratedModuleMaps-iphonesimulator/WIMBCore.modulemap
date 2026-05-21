@@ -1,4 +1,0 @@
-module WIMBCore {
-header "WIMBCore-Swift.h"
-export *
-}
