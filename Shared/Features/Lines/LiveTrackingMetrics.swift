@@ -21,7 +21,17 @@ enum LiveTrackingMetrics {
         userLocation: Coordinate?,
         etaMinutes: (Vehicle, Stop) -> Int
     ) -> LiveTrackingSnapshot? {
-        guard !stops.isEmpty, !vehicles.isEmpty else { return nil }
+        guard !vehicles.isEmpty else { return nil }
+
+        if stops.isEmpty {
+            let vehicle = referenceVehicle(from: vehicles, userLocation: userLocation)
+            return LiveTrackingSnapshot(
+                vehicle: vehicle,
+                stopsAway: 0,
+                etaMinutes: 0,
+                referenceStop: nil
+            )
+        }
 
         let referenceIndex = referenceStopIndex(stops: stops, userLocation: userLocation)
         let referenceStop = stops[safe: referenceIndex]
@@ -84,6 +94,14 @@ enum LiveTrackingMetrics {
         }
 
         return bestIndex
+    }
+
+    private static func referenceVehicle(from vehicles: [Vehicle], userLocation: Coordinate?) -> Vehicle {
+        guard let userLocation else { return vehicles[0] }
+
+        return vehicles.min { lhs, rhs in
+            lhs.coordinate.distance(to: userLocation) < rhs.coordinate.distance(to: userLocation)
+        } ?? vehicles[0]
     }
 }
 
