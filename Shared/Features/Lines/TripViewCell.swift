@@ -1,6 +1,6 @@
 //
 //  TripViewCell.swift
-//  WhereIsMyBus
+//  Shared
 //
 
 import DesignSystem
@@ -20,15 +20,6 @@ struct TripViewCell: View {
                 .multilineTextAlignment(.leading)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
-    }
-}
-
-struct TripViewCell_Previews: PreviewProvider {
-    static var previews: some View {
-        TripViewCell(
-            tripNumber: "8000-10",
-            destination: "METRÔ JABAQUARA - CENTRO PARALIMPICO"
-        )
     }
 }
 
@@ -53,11 +44,5 @@ struct TripTagView: View {
                 .stroke(WIMBColors.sheetHandle, lineWidth: 1)
         )
         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
-    }
-}
-
-struct TripTagView_Previews: PreviewProvider {
-    static var previews: some View {
-        TripTagView(tripNumber: "8000-10")
     }
 }

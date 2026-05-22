@@ -19,6 +19,20 @@ enum WIMBAppEnvironment {
         return TrackingState(client: client)
     }
 
+    @MainActor
+    static func makeStationsState() -> StationsState {
+        let configuration = SPTransConfiguration(token: resolveSPTransToken())
+        let client = SPTransClient(configuration: configuration)
+        return StationsState(client: client)
+    }
+
+    @MainActor
+    static func makeDirectionsState() -> DirectionsState {
+        let configuration = SPTransConfiguration(token: resolveSPTransToken())
+        let client = SPTransClient(configuration: configuration)
+        return DirectionsState(client: client)
+    }
+
     private static func resolveSPTransToken() -> String {
         if let token = ProcessInfo.processInfo.environment["SPTRANS_TOKEN"], !token.isEmpty {
             return token

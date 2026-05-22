@@ -1,33 +1,140 @@
-/* Home */
+/* Home (legado) */
 "home.title" = "Pra onde você vai?";
-"home.subtitle" = "Digite o número ou nome da linha";
+"home.subtitle" = "Digite o número ou o nome da linha";
 
 /* Common */
 "common.back" = "Voltar";
 "common.updated" = "Atualizado";
 
 /* Tracking */
-"tracking.section" = "Suas linhas";
-"tracking.stop" = "Parar de acompanhar a linha %@";
+"tracking.section" = "Linhas que você acompanha";
+"tracking.stop" = "Parar de ver a linha %@";
 
 /* Search */
 "search.placeholder" = "Número ou nome da linha";
 "search.cancel" = "Cancelar";
-"search.results" = "Encontramos";
-"search.error.title" = "Ops, algo deu errado";
-"search.empty.title" = "Nada por aqui";
-"search.empty.message" = "Tenta buscar pelo número ou pelo nome da linha";
+"search.results" = "Achamos isso";
+"search.error.title" = "Algo deu errado";
+"search.empty.title" = "Nada encontrado";
+"search.empty.message" = "Tenta de novo com o número ou o nome da linha";
 
 /* Line detail */
 "line.stops.title" = "Paradas com ônibus chegando";
-"line.stops.empty.title" = "Ainda sem previsões";
-"line.stops.empty.message" = "Não achamos ônibus nesta linha agora. Tenta de novo em instantes.";
-"line.busesOnMap" = "%d no mapa";
+"line.stops.empty.title" = "Nenhum ônibus apareceu ainda";
+"line.stops.empty.message" = "Pode ser que ninguém esteja circulando agora. Espera um pouco e atualiza.";
+"line.busesOnMap" = "%d ônibus no mapa";
 
 /* Vehicle */
-"vehicle.accessible" = "Ônibus adaptado";
+"vehicle.accessible" = "Ônibus com acesso para cadeirante";
 
 /* Map overlay */
-"map.idle" = "Busque uma linha pra começar";
+"map.idle" = "Busque uma linha para começar";
 "map.tracking" = "%d ônibus · %d linha(s)";
-"map.refresh" = "Atualizar posição dos ônibus";
+"map.refresh" = "Atualizar mapa";
+
+/* Smart ETA */
+"eta.smart" = "Chega em ~%d min";
+
+/* Metro */
+"metro.section" = "Metrô perto de você";
+"metro.hint" = "Se o ônibus demorar, vale ir a pé até o metrô";
+"metro.walking" = "%d min andando";
+
+/* Weather */
+"weather.rainDelay" = "Está chovendo — o ônibus pode atrasar um pouco";
+
+/* Tab bar */
+"tab.directions" = "Como ir";
+"tab.stations" = "Paradas";
+"tab.lines" = "Linhas";
+
+/* Shell */
+"shell.region" = "Grande São Paulo";
+"shell.directions.prompt" = "Pra onde você vai?";
+"shell.directions.search" = "Buscar endereço ou lugar";
+"shell.comingSoon.title" = "Em breve";
+"shell.directions.comingSoon" = "Em breve você vai poder montar sua viagem por aqui.";
+"shell.stations.placeholder" = "Paradas no mapa — em breve.";
+"shell.lines.placeholder" = "Buscar linhas — em breve.";
+
+/* Lines tab */
+"lines.search" = "Qual linha você quer ver?";
+"lines.filter.all" = "Todas";
+"lines.filter.bus" = "Só ônibus";
+"lines.recent" = "Vistas recentemente";
+"lines.empty.title" = "Nenhuma linha ainda";
+"lines.empty.message" = "Digite o número da linha (tipo 8000) ou o nome dela";
+
+/* Line route */
+"line.timeline.title" = "Paradas desta linha";
+"line.timeline.noForecast" = "Sem horário agora";
+"line.direction.title" = "Sentido da linha";
+"line.direction.outbound" = "Ida";
+"line.direction.inbound" = "Volta";
+"line.direction.switch" = "Mudar sentido";
+
+/* Live tracking */
+"liveTracking.button" = "Ver ônibus no mapa";
+"liveTracking.stopsAway" = "Faltam %d paradas";
+"liveTracking.refreshIn" = "Atualiza em %d s";
+"liveTracking.close" = "Fechar";
+"liveTracking.showRoute" = "Mostrar trajeto no mapa";
+
+/* Stations tab */
+"stations.search" = "Buscar parada ou rua";
+"stations.nearby" = "Paradas perto de mim";
+"stations.results" = "Paradas por aqui";
+"stations.empty.message" = "Busque um endereço ou toque em \"Paradas perto de mim\"";
+"stations.arrivals.section" = "Quem chega nesta parada";
+"stations.arrivals.empty.title" = "Ninguém chegando agora";
+"stations.arrivals.empty.message" = "Não há ônibus previsto neste ponto. Tenta de novo daqui a pouco.";
+"stations.updatedAt" = "Atualizado às %@";
+"stations.multipleBuses" = "%d ônibus";
+
+/* Directions tab */
+"directions.prompt" = "Pra onde você vai?";
+"directions.recent" = "Buscados recentemente";
+"directions.recent.clear" = "Limpar";
+"directions.place.actions" = "Mais opções";
+"directions.favorites" = "Lugares que você usa todo dia";
+"directions.favorite.home" = "Casa";
+"directions.favorite.work" = "Trabalho";
+"directions.favorites.hint" = "Toque em ⋯ ao lado do endereço para salvar Casa ou Trabalho.";
+"directions.favorite.saveHome" = "Salvar como Casa";
+"directions.favorite.saveWork" = "Salvar como Trabalho";
+"directions.favorite.clear" = "Tirar dos favoritos";
+
+/* Trip planner */
+"planner.title" = "Caminhos sugeridos";
+"planner.currentLocation" = "Onde estou agora";
+"planner.origin" = "Saindo de";
+"planner.destination" = "Indo para";
+"planner.departure.section" = "Que horas você sai?";
+"planner.departure.now" = "Agora";
+"planner.departure.earlier" = "15 min antes";
+"planner.departure.later" = "Daqui 15 min";
+"planner.showRoutes" = "Ver caminhos";
+"planner.disclaimer" = "São sugestões com base nas linhas de ônibus da cidade. No dia a dia pode ser um pouco diferente.";
+"planner.empty.title" = "Não achamos caminho";
+"planner.empty.message" = "Tenta outro endereço ou muda o ponto de partida.";
+
+/* Route detail */
+"route.steps.section" = "Como fazer";
+"route.totalMinutes" = "%d min no total";
+"route.walkMinutes" = "%d min andando";
+"route.busMinutes" = "%d min de ônibus";
+"route.stepMinutes" = "Cerca de %d min";
+
+/* Errors (mensagens amigáveis) */
+"error.network" = "Sem internet ou sinal fraco. Confere sua conexão e tenta de novo.";
+"error.timeout" = "Demorou demais para responder. Tenta outra vez.";
+"error.server" = "O sistema da cidade está instável. Espera um pouco e tenta de novo.";
+"error.noData" = "Não encontramos informação agora. Tenta de novo.";
+"error.lineNotFound" = "Não achamos essa linha. Confere o número e busca de novo.";
+"error.stopNotFound" = "Não achamos essa parada.";
+"error.noVehicles" = "Nenhum ônibus apareceu nesta linha agora.";
+"error.tooManyLines" = "Você já está vendo %d linhas. Pare uma delas para abrir outra.";
+"error.locationDenied" = "Precisamos da sua localização para achar paradas perto. Ative em Ajustes > Privacidade > Localização.";
+"error.locationDisabled" = "Ative a localização do celular para usar paradas perto de mim.";
+"error.auth" = "Não conseguimos falar com o sistema de ônibus. Abre o app de novo.";
+"error.generic" = "Algo deu errado. Tenta de novo.";

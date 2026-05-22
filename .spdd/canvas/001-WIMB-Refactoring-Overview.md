@@ -10,14 +10,12 @@
 
 ## Contexto do Projeto
 
-O **WhereIsMyBus (WIMB)** é um aplicativo iOS para rastreamento de ônibus em tempo real na cidade de São Paulo, utilizando a API pública da SPTrans (OlhoVivo). O objetivo desta refatoração é transformar o app em uma experiência similar ao Uber, com:
+O **WhereIsMyBus (WIMB)** é um aplicativo iOS para rastreamento de ônibus em tempo real na cidade de São Paulo, utilizando a API pública da SPTrans (OlhoVivo). A refatoração evolui o app para uma experiência **estilo Moovit** (3 abas: Direções, Estações, Linhas), com:
 
 - Arquitetura modular usando Swift Package Manager (SPM)
-- UI/UX moderna com mapa full-screen e bottom sheet
-- Suporte a múltiplas linhas de ônibus simultâneas
-- Animação suave de movimento dos veículos
-- Engine inteligente com previsões AI-powered
-- Integração com clima e metrô/trem
+- Navegação por abas + planejador de viagens
+- Localização em tempo real no mapa (rota amarela, múltiplos ônibus)
+- Engine inteligente com previsões + clima + metrô
 
 ---
 
@@ -40,9 +38,12 @@ O **WhereIsMyBus (WIMB)** é um aplicativo iOS para rastreamento de ônibus em t
 |------|------|--------|-----------|
 | 1 | Fundação | ✅ Completo | WIMBCore + NetworkClient packages |
 | 2 | Engine | ✅ Implementado | TransportEngine + Storage |
-| 3 | UI/UX | ⏳ Pendente | MapFeature + DesignSystem |
-| 4 | Inteligência | ⏳ Pendente | AI Predictions + Weather + Metro |
-| 5 | Polish | ⏳ Pendente | Animations + Accessibility |
+| 3 | UI/UX | ✅ Completo | MapFeature + DesignSystem + localização |
+| 4 | Inteligência | ✅ Implementado | Previsões smart + clima + metrô próximo |
+| 5 | Polish | ⏳ Parcial | Acessibilidade, animações finais |
+| 6 | UX Moovit | 📋 Planejado | 3 abas, planejador, live tracking, estações, linhas |
+
+> **Plano detalhado:** [.spdd/MOOVIT-EXECUTION-PLAN.md](../MOOVIT-EXECUTION-PLAN.md) · **Canvas:** [007-Moovit-UX-Refactoring.md](007-Moovit-UX-Refactoring.md)
 
 ---
 
@@ -56,7 +57,9 @@ O **WhereIsMyBus (WIMB)** é um aplicativo iOS para rastreamento de ônibus em t
 │   ├── 003-NetworkClient-Package.md          # ✅ REASONS Canvas - Network
 │   ├── 004-TransportEngine-Package.md        # ✅ REASONS Canvas - Engine
 │   ├── 005-MapFeature-Package.md             # ⏳ REASONS Canvas - Map
-│   └── 006-DesignSystem-Package.md           # ⏳ REASONS Canvas - UI
+│   ├── 006-DesignSystem-Package.md           # ⏳ REASONS Canvas - UI
+│   └── 007-Moovit-UX-Refactoring.md          # 📋 Fase 6 — UX Moovit
+├── MOOVIT-EXECUTION-PLAN.md                  # 📋 Plano de execução Fase 6
 ├── analysis/
 │   └── current-codebase-analysis.md          # ✅ Análise do código atual
 ├── prompts/
@@ -107,12 +110,7 @@ O **WhereIsMyBus (WIMB)** é um aplicativo iOS para rastreamento de ônibus em t
 
 ## Próximos Passos
 
-1. ✅ Criar estrutura de documentação SPDD
-2. ✅ Gerar REASONS Canvas para WIMBCore
-3. ✅ Gerar REASONS Canvas para NetworkClient
-4. ✅ Implementar packages da Fase 1 (27 arquivos Swift)
-5. ✅ Testes unitários (~38 testes)
-6. 📋 Guia de integração criado
-7. 📋 REASONS Canvas para TransportEngine
-8. ⏳ Implementar TransportEngine Package
-9. ⏳ Integrar packages ao projeto Xcode
+1. ✅ Fases 1–4 concluídas (SPM, engine, UI Uber, inteligência)
+2. 📋 **Fase 6 — Refatoração Moovit** (ver [MOOVIT-EXECUTION-PLAN.md](../MOOVIT-EXECUTION-PLAN.md))
+3. ⏳ Subfase 6.1: Shell + tab bar + design tokens
+4. ⏳ Subfases 6.2–6.6: Linhas → Live → Estações → Planejador → Docs

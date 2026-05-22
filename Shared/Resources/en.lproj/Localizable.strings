@@ -1,4 +1,4 @@
-/* Home */
+/* Home (legacy) */
 "home.title" = "Where are you going?";
 "home.subtitle" = "Type the bus line number or name";
 
@@ -7,27 +7,134 @@
 "common.updated" = "Updated";
 
 /* Tracking */
-"tracking.section" = "Your lines";
-"tracking.stop" = "Stop tracking line %@";
+"tracking.section" = "Lines you're watching";
+"tracking.stop" = "Stop watching line %@";
 
 /* Search */
 "search.placeholder" = "Line number or name";
 "search.cancel" = "Cancel";
-"search.results" = "Results";
+"search.results" = "Here's what we found";
 "search.error.title" = "Something went wrong";
-"search.empty.title" = "No results";
-"search.empty.message" = "Try another line number or name";
+"search.empty.title" = "Nothing found";
+"search.empty.message" = "Try again with the line number or name";
 
 /* Line detail */
-"line.stops.title" = "Stops with buses arriving";
-"line.stops.empty.title" = "No forecasts yet";
-"line.stops.empty.message" = "We couldn't find buses on this line right now. Try again in a moment.";
-"line.busesOnMap" = "%d on the map";
+"line.stops.title" = "Stops with buses coming";
+"line.stops.empty.title" = "No buses showing yet";
+"line.stops.empty.message" = "Maybe none are running right now. Wait a bit and refresh.";
+"line.busesOnMap" = "%d buses on the map";
 
 /* Vehicle */
-"vehicle.accessible" = "Accessible bus";
+"vehicle.accessible" = "Wheelchair-accessible bus";
 
 /* Map overlay */
 "map.idle" = "Search for a line to get started";
 "map.tracking" = "%d buses · %d line(s)";
-"map.refresh" = "Refresh bus positions";
+"map.refresh" = "Refresh map";
+
+/* Smart ETA */
+"eta.smart" = "Arrives in ~%d min";
+
+/* Metro */
+"metro.section" = "Metro near you";
+"metro.hint" = "If the bus is slow, walking to the metro might be faster";
+"metro.walking" = "%d min walk";
+
+/* Weather */
+"weather.rainDelay" = "It's raining — the bus may be a little late";
+
+/* Tab bar */
+"tab.directions" = "How to go";
+"tab.stations" = "Stops";
+"tab.lines" = "Lines";
+
+/* Shell */
+"shell.region" = "Greater São Paulo";
+"shell.directions.prompt" = "Where are you going?";
+"shell.directions.search" = "Search address or place";
+"shell.comingSoon.title" = "Coming soon";
+"shell.directions.comingSoon" = "Soon you'll be able to plan your trip here.";
+"shell.stations.placeholder" = "Stops on the map — coming soon.";
+"shell.lines.placeholder" = "Search lines — coming soon.";
+
+/* Lines tab */
+"lines.search" = "Which line do you want to see?";
+"lines.filter.all" = "All";
+"lines.filter.bus" = "Bus only";
+"lines.recent" = "Recently viewed";
+"lines.empty.title" = "No lines yet";
+"lines.empty.message" = "Type the line number (like 8000) or its name";
+
+/* Line route */
+"line.timeline.title" = "Stops on this line";
+"line.timeline.noForecast" = "No times right now";
+"line.direction.title" = "Direction";
+"line.direction.outbound" = "Outbound";
+"line.direction.inbound" = "Return";
+"line.direction.switch" = "Change direction";
+
+/* Live tracking */
+"liveTracking.button" = "See buses on the map";
+"liveTracking.stopsAway" = "%d stops to go";
+"liveTracking.refreshIn" = "Updates in %d s";
+"liveTracking.close" = "Close";
+"liveTracking.showRoute" = "Show route on map";
+
+/* Stations tab */
+"stations.search" = "Search stop or street";
+"stations.nearby" = "Stops near me";
+"stations.results" = "Stops around here";
+"stations.empty.message" = "Search an address or tap \"Stops near me\"";
+"stations.arrivals.section" = "Who's arriving at this stop";
+"stations.arrivals.empty.title" = "Nobody coming now";
+"stations.arrivals.empty.message" = "No buses expected at this stop. Try again in a moment.";
+"stations.updatedAt" = "Updated at %@";
+"stations.multipleBuses" = "%d buses";
+
+/* Directions tab */
+"directions.prompt" = "Where are you going?";
+"directions.recent" = "Recent searches";
+"directions.recent.clear" = "Clear";
+"directions.place.actions" = "More options";
+"directions.favorites" = "Places you use every day";
+"directions.favorite.home" = "Home";
+"directions.favorite.work" = "Work";
+"directions.favorites.hint" = "Tap ⋯ next to an address to save Home or Work.";
+"directions.favorite.saveHome" = "Save as Home";
+"directions.favorite.saveWork" = "Save as Work";
+"directions.favorite.clear" = "Remove from favorites";
+
+/* Trip planner */
+"planner.title" = "Suggested routes";
+"planner.currentLocation" = "Where I am now";
+"planner.origin" = "Leaving from";
+"planner.destination" = "Going to";
+"planner.departure.section" = "What time do you leave?";
+"planner.departure.now" = "Now";
+"planner.departure.earlier" = "15 min earlier";
+"planner.departure.later" = "In 15 min";
+"planner.showRoutes" = "See routes";
+"planner.disclaimer" = "These are suggestions based on city bus lines. Your actual trip may vary a little.";
+"planner.empty.title" = "No route found";
+"planner.empty.message" = "Try another address or change where you start from.";
+
+/* Route detail */
+"route.steps.section" = "How to do it";
+"route.totalMinutes" = "%d min total";
+"route.walkMinutes" = "%d min walking";
+"route.busMinutes" = "%d min on the bus";
+"route.stepMinutes" = "About %d min";
+
+/* Errors (friendly messages) */
+"error.network" = "No internet or weak signal. Check your connection and try again.";
+"error.timeout" = "It took too long to respond. Try again.";
+"error.server" = "The city system is unstable. Wait a bit and try again.";
+"error.noData" = "We couldn't find information right now. Try again.";
+"error.lineNotFound" = "We couldn't find that line. Check the number and search again.";
+"error.stopNotFound" = "We couldn't find that stop.";
+"error.noVehicles" = "No buses are showing on this line right now.";
+"error.tooManyLines" = "You're already watching %d lines. Stop one to open another.";
+"error.locationDenied" = "We need your location to find nearby stops. Turn it on in Settings > Privacy > Location.";
+"error.locationDisabled" = "Turn on location on your phone to use stops near me.";
+"error.auth" = "We couldn't reach the bus system. Open the app again.";
+"error.generic" = "Something went wrong. Try again.";

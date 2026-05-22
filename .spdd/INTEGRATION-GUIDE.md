@@ -217,10 +217,79 @@ No Xcode: **Product → Build** (⌘B)
 - [ ] Token configurado via Environment Variable (`SPTRANS_TOKEN`)
 - [x] Package umbrella `Packages/Package.swift` (compatível Xcode 14)
 - [x] Build validado: Xcode 14.2 + iOS Simulator 16.2
+- [x] Fase 4: previsões smart, clima Open-Meteo, metrô próximo
 
 ---
 
-## 7. Troubleshooting
+## 8. Fase 4 — Inteligência (implementado)
+
+### Previsões smart (`SmartArrivalPredictor`)
+
+Combina três fontes:
+
+1. **SPTrans** — quando `arrivalForecast` vem da API ("3 min", "Chegando")
+2. **Movimento** — velocidade observada entre posições de polling
+3. **Clima** — fator de velocidade reduzido em chuva (via Open-Meteo)
+
+```swift
+let prediction = trackingState.smartPrediction(for: vehicle, at: stop)
+// prediction.source: .spTrans | .estimated | .hybrid
+```
+
+### Clima (`WeatherClient`)
+
+- API: [Open-Meteo](https://open-meteo.com/) — **sem API key**
+- Atualizado em `TrackingState.refreshContext()` com base na localização
+- Chip no mapa (`WIMBWeatherChip`) + aviso de chuva no detalhe da linha
+
+### Metrô próximo (`MetroNearbyService`)
+
+- Catálogo estático das principais estações de SP
+- Exibido no bottom sheet quando o usuário não está vendo detalhe de linha
+- Distância a pé estimada (~80 m/min)
+
+### Checklist Fase 4
+
+- [x] `WeatherSnapshot`, `MetroStation`, `NearbyMetroStop` (WIMBCore)
+- [x] `WeatherClient` (NetworkClient)
+- [x] `SmartArrivalPredictor` + parser SPTrans (TransportEngine)
+- [x] `TrackingState.weather` + `nearbyMetro` + `refreshContext()`
+- [x] UI: chip de clima, seção metrô, ETA inteligente
+- [x] Localização pt-BR + en
+- [x] Testes unitários
+
+---
+
+## 10. Fase 6 — UX Moovit (implementado)
+
+Refatoração concluída: **3 abas** (Direções · Estações · Linhas), planejador heurístico e live tracking.
+
+```swift
+MainShellView(
+    navigationState: navigationState,
+    strings: .localized,
+    directionsTab: { DirectionsTabRootView() },
+    stationsTab: { StationsTabRootView() },
+    linesTab: { LinesTabRootView() }
+)
+.environmentObject(trackingState)
+.environmentObject(stationsState)
+.environmentObject(directionsState)
+```
+
+| Documento | Conteúdo |
+|-----------|----------|
+| [MOOVIT-EXECUTION-PLAN.md](MOOVIT-EXECUTION-PLAN.md) | Plano de PRs, APIs, checklist |
+| [canvas/007-Moovit-UX-Refactoring.md](canvas/007-Moovit-UX-Refactoring.md) | Canvas REASONS completo |
+| [docs/screenshots/moovit/](../docs/screenshots/moovit/README.md) | Referências visuais |
+
+**Subfases concluídas:** 6.1 Shell → 6.2 Linhas → 6.3 Live UI → 6.4 Estações → 6.5 Planejador → 6.6 Polish
+
+> UI legada (`TripListView`, `TransportHomeView`, `TripHomePanel`) removida na 6.6.
+
+---
+
+## 9. Troubleshooting
 
 ### Erro: "No such module 'WIMBCore'"
 
