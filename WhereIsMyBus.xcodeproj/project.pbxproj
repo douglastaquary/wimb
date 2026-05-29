@@ -103,6 +103,7 @@
 		B2DR050124BBD8A60018FDC3 /* TripPlannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripPlannerView.swift; sourceTree = "<group>"; };
 		B2DR060124BBD8A60018FDC3 /* SuggestedRoutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedRoutesView.swift; sourceTree = "<group>"; };
 		B2DR070124BBD8A60018FDC3 /* RouteDirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDirectionsView.swift; sourceTree = "<group>"; };
+		B2PKG0124BBD8A60018FDC3 /* Packages */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Packages; path = Packages; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +187,7 @@
 		4EFDF89A24BBD8A40018FDC3 = {
 			isa = PBXGroup;
 			children = (
+				B2PKG0124BBD8A60018FDC3 /* Packages */,
 				4EFDF89F24BBD8A40018FDC3 /* Shared */,
 				4EFDF8A924BBD8A60018FDC3 /* iOS */,
 				4EFDF8B024BBD8A60018FDC3 /* macOS */,
@@ -349,7 +351,6 @@
 			);
 			mainGroup = 4EFDF89A24BBD8A40018FDC3;
 			packageReferences = (
-				A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */,
 			);
 			productRefGroup = 4EFDF8A824BBD8A60018FDC3 /* Products */;
 			projectDirPath = "";
@@ -696,46 +697,29 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "Packages";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
 		A1B2C3D524BBD8A60018FDC3 /* WIMBCore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
 			productName = WIMBCore;
 		};
 		A1B2C3D624BBD8A60018FDC3 /* NetworkClient */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
 			productName = NetworkClient;
 		};
 		A1B2C3D724BBD8A60018FDC3 /* TransportEngine */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
 			productName = TransportEngine;
 		};
 		A1B2C3DE24BBD8A60018FDC3 /* DesignSystem */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
 			productName = DesignSystem;
 		};
 		A1B2C3DF24BBD8A60018FDC3 /* MapFeature */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
 			productName = MapFeature;
 		};
 		A1B2C3E024BBD8A60018FDC3 /* AppShell */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A1B2C3E224BBD8A60018FDC3 /* XCRemoteSwiftPackageReference "WIMBPackages" */;
 			productName = AppShell;
 		};
 /* End XCSwiftPackageProductDependency section */
