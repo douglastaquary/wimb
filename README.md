@@ -60,12 +60,25 @@ Documentação técnica: [.spdd/INTEGRATION-GUIDE.md](.spdd/INTEGRATION-GUIDE.md
 
 ## Configuração
 
-1. Clone o repositório e abra `WhereIsMyBus.xcodeproj`.
-2. Configure o token da SPTrans em **Product → Scheme → Edit Scheme → Run → Environment Variables**:
-   - `SPTRANS_TOKEN` = seu token Olho Vivo
-3. Build e run no simulador ou dispositivo.
+1. Clone o repositório **com submodules** (necessário para o código SPM):
 
-Os packages SPM ficam em `Packages/`. Veja [Packages/README.md](Packages/README.md).
+```bash
+git clone --recurse-submodules https://github.com/douglastaquary/wimb.git
+cd wimb
+```
+
+Se já clonou sem submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+2. Abra `WhereIsMyBus.xcodeproj`.
+3. Configure o token da SPTrans em **Product → Scheme → Edit Scheme → Run → Environment Variables**:
+   - `SPTRANS_TOKEN` = seu token Olho Vivo
+4. Build e run no simulador ou dispositivo.
+
+Os packages SPM ficam no submodule `Packages/` ([wimb-packages](https://github.com/douglastaquary/wimb-packages)). Veja [Packages/README.md](Packages/README.md).
 
 ## Idiomas
 

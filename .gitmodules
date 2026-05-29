@@ -1,0 +1,4 @@
+[submodule "Packages"]
+	path = Packages
+	url = https://github.com/douglastaquary/wimb-packages.git
+	branch = main
