@@ -75,22 +75,25 @@ struct LiveLineTrackingView: View {
         let snapshot = liveSnapshot
 
         let etaLabel: String
-        if let snapshot = snapshot {
+        let stopsAwayLabel: String?
+
+        if let snapshot = snapshot, snapshot.referenceStop != nil {
             etaLabel = WIMBL10n.smartETA(minutes: snapshot.etaMinutes)
-        } else if let forecast = vehicles.first?.arrivalForecast, !forecast.isEmpty {
-            etaLabel = forecast
+            stopsAwayLabel = WIMBL10n.liveTrackingStopsAway(snapshot.stopsAway)
+        } else if !vehicles.isEmpty {
+            etaLabel = WIMBL10n.liveTrackingLiveNow
+            stopsAwayLabel = nil
         } else {
             etaLabel = WIMBL10n.lineStopsEmptyTitle
+            stopsAwayLabel = nil
         }
-
-        let stopsAwayLabel = snapshot.map { WIMBL10n.liveTrackingStopsAway($0.stopsAway) }
 
         return LiveTrackingCardContent(
             lineNumber: line.formattedNumber,
             destination: line.secondaryTerminal,
             etaLabel: etaLabel,
             stopsAwayLabel: stopsAwayLabel,
-            vehiclePrefix: snapshot?.vehicle.prefix,
+            vehiclePrefix: snapshot?.vehicle.prefix ?? vehicles.first?.prefix,
             busesOnMapLabel: WIMBL10n.lineBusesOnMap(vehicles.count),
             lastUpdate: trackingState.lastUpdate,
             pollingInterval: trackingState.pollingInterval,

@@ -23,6 +23,10 @@ struct LineRouteView: View {
         _displayedLine = State(initialValue: line)
     }
 
+    private var lineVehicles: [Vehicle] {
+        trackingState.vehicles(for: displayedLine.id)
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             routeHeader
@@ -42,15 +46,17 @@ struct LineRouteView: View {
                         ProgressView()
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 20)
-                    } else if trackingState.arrivals.isEmpty {
+                    } else if !trackingState.arrivals.isEmpty {
+                        WIMBSectionHeader(WIMBL10n.lineTimelineTitle)
+                        LineTimelineView(stops: trackingState.arrivals)
+                    } else if !lineVehicles.isEmpty {
+                        activeVehiclesSection
+                    } else {
                         WIMBEmptyStateView(
                             title: WIMBL10n.lineStopsEmptyTitle,
                             systemImage: "signpost.right",
                             message: WIMBL10n.lineStopsEmptyMessage
                         )
-                    } else {
-                        WIMBSectionHeader(WIMBL10n.lineTimelineTitle)
-                        LineTimelineView(stops: trackingState.arrivals)
                     }
                 }
                 .padding(.horizontal, 16)
@@ -70,6 +76,44 @@ struct LineRouteView: View {
                 await trackingState.trackLine(displayedLine)
             }
             recentStore.record(displayedLine)
+        }
+        .onChange(of: lineVehicles.count) { count in
+            guard count > 0,
+                  trackingState.arrivals.isEmpty,
+                  !trackingState.isLoadingArrivals else { return }
+            Task { await trackingState.loadArrivals(for: displayedLine.id) }
+        }
+    }
+
+    private var activeVehiclesSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            WIMBSectionHeader(WIMBL10n.lineActiveVehiclesSection)
+
+            ForEach(lineVehicles) { vehicle in
+                HStack(spacing: 10) {
+                    TripTagView(tripNumber: vehicle.prefix)
+
+                    if vehicle.accessible {
+                        Image(systemName: "figure.roll")
+                            .font(.caption)
+                            .foregroundColor(WIMBShellColors.tabActive)
+                            .accessibilityLabel(WIMBL10n.vehicleAccessible)
+                    }
+
+                    Spacer()
+
+                    Text(vehicle.lastUpdateTime)
+                        .font(WIMBTypography.caption)
+                        .foregroundColor(WIMBShellColors.etaLive)
+                }
+                .padding(12)
+                .background(WIMBColors.surface)
+                .clipShape(RoundedRectangle(cornerRadius: 12, style: .continuous))
+            }
+
+            Text(WIMBL10n.lineActiveVehiclesHint)
+                .font(WIMBTypography.caption)
+                .foregroundColor(WIMBColors.secondaryLabel)
         }
     }
 

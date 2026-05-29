@@ -72,6 +72,8 @@ enum WIMBL10n {
     static var linesEmptyMessage: String { text("lines.empty.message") }
     static var lineTimelineTitle: String { text("line.timeline.title") }
     static var lineTimelineNoForecast: String { text("line.timeline.noForecast") }
+    static var lineActiveVehiclesSection: String { text("line.activeVehicles.section") }
+    static var lineActiveVehiclesHint: String { text("line.activeVehicles.hint") }
     static var lineDirectionTitle: String { text("line.direction.title") }
     static var lineDirectionOutbound: String { text("line.direction.outbound") }
     static var lineDirectionInbound: String { text("line.direction.inbound") }
@@ -87,6 +89,7 @@ enum WIMBL10n {
     }
 
     static var liveTrackingClose: String { text("liveTracking.close") }
+    static var liveTrackingLiveNow: String { text("liveTracking.liveNow") }
     static var liveTrackingShowRoute: String { text("liveTracking.showRoute") }
 
     static var stationsSearchPlaceholder: String { text("stations.search") }

@@ -23,6 +23,8 @@
 "line.stops.empty.title" = "No buses showing yet";
 "line.stops.empty.message" = "Maybe none are running right now. Wait a bit and refresh.";
 "line.busesOnMap" = "%d buses on the map";
+"line.activeVehicles.section" = "Buses running now";
+"line.activeVehicles.hint" = "No stop times yet, but these buses are on the map above.";
 
 /* Vehicle */
 "vehicle.accessible" = "Wheelchair-accessible bus";
@@ -78,6 +80,7 @@
 "liveTracking.stopsAway" = "%d stops to go";
 "liveTracking.refreshIn" = "Updates in %d s";
 "liveTracking.close" = "Close";
+"liveTracking.liveNow" = "Live now";
 "liveTracking.showRoute" = "Show route on map";
 
 /* Stations tab */

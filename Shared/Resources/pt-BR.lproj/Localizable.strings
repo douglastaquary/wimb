@@ -23,6 +23,8 @@
 "line.stops.empty.title" = "Nenhum ônibus apareceu ainda";
 "line.stops.empty.message" = "Pode ser que ninguém esteja circulando agora. Espera um pouco e atualiza.";
 "line.busesOnMap" = "%d ônibus no mapa";
+"line.activeVehicles.section" = "Ônibus circulando agora";
+"line.activeVehicles.hint" = "Ainda não temos horário por parada, mas estes ônibus estão no mapa acima.";
 
 /* Vehicle */
 "vehicle.accessible" = "Ônibus com acesso para cadeirante";
@@ -78,6 +80,7 @@
 "liveTracking.stopsAway" = "Faltam %d paradas";
 "liveTracking.refreshIn" = "Atualiza em %d s";
 "liveTracking.close" = "Fechar";
+"liveTracking.liveNow" = "Ao vivo";
 "liveTracking.showRoute" = "Mostrar trajeto no mapa";
 
 /* Stations tab */
